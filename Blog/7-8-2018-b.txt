@@ -1,0 +1,4 @@
+Another thing I learned today...
+
+It seems obvious, but: If you have a CSS grid item and an <h1> in that. The text node in the <h1> element isn't a child of the grid item.
+ Bang head here: > < 

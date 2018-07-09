@@ -1,0 +1,12 @@
+Check your spelling first.
+
+A quick tip for my fellow newbies.
+
+Step one when debugging a file: Check your spelling.
+
+For example, the following CSS doesn't work!
+ 	.thinger{
+ 		diplay: grid;
+ 	}
+
+Save yourself an hour of frustration, check your spelling.
