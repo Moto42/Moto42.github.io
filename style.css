@@ -117,7 +117,7 @@ body {
 }
 
 
-.col>img{
+.colImg{
 
 	width: 100%;
 
@@ -137,5 +137,6 @@ body {
 
 
 #finePrint {
+	margin-top: 10px;
 	font-size: smaller;
 }
