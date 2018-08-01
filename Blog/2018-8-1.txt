@@ -1,0 +1,12 @@
+"YAY. It crashed!"
+
+So, I just spent 20 minutes hunting down a bug.
+
+Expected behavior: Click button: Element onscreen changes.
+Actual behavior: Click button: Nothing.
+
+After some editing, googling, <del>weeping,</del> and frustration I find and correct a small mistake.
+
+Expected behavior: Click button: Element onscreen changes.
+Actual behavior: entire website crashes.
+My reaction: *Celebration* (?)
