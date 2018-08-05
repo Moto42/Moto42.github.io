@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>YouTube Soundboard</title>
+</head>
+<body>
+	<section id="topBar"><h1 class='appTitle' id='topTitle'>YouTube SoundBoard</h1></section>
+
+	<div id='addButtonForm' class=''>
+
+			YouTube URL or video ID:<input type=text>
+
+			<input type=button value='Cancel'>
+	</div>
+
+	<section class = 'hidden' id=playerFrame> Nothing to see</section>
+
+
+	
+	<section id="soundBoard"> <!-- The Cards will go here --> </section>
+
+	<section id='cookiesDisclaimer'>
+		This website uses cookies to remember the buttons you have added and removed.<br>
+		Are you ok with that?
+			<button type=button class='cookieButton' id='cookiesYes'>Yes</button>
+			<button type=button class='cookieButton' id='cookiesNo' >No </button>
+	</section>
+
+	<script type="text/javascript" src = "https://www.youtube.com/iframe_api"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
