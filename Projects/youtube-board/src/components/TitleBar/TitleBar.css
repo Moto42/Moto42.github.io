@@ -1,0 +1,14 @@
+.titleBar {
+	display:  flex;
+	max-height: 110px;
+	font-family: Helvetica, sans-serif;
+}
+
+.titleBar h1{
+	height: 100%;
+}
+
+.titleBar img {
+	height: 110px;
+	width: auto;
+}

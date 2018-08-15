@@ -27,7 +27,6 @@ class Card {
 }
 
 
-
 function parseIDFromString(cardString) {
 	if(cardString.includes("&")) {
 		return cardString.slice(0,cardString.indexOf('&'));
@@ -58,7 +57,6 @@ function onYouTubeIframeAPIReady(){
 			'onStateChange' : onPlayerStateChange,
 		}
 	});
-
 }
 
 function onPlayerReady(){
@@ -90,7 +88,6 @@ function onPlayerStateChange(event){
 			buttonsActive = true;
 			player.getIframe().classList.add('hidden');
 	}
-
 }
 
 
