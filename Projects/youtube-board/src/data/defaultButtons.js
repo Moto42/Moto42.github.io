@@ -1,5 +1,5 @@
-const defaultButtons = [,
-	{vID: 'DLTZctTG6cE', thumnNum: 0 },
+const defaultButtons = [
+	{vID: 'DLTZctTG6cE', thumnNum: 1 },
 	{vID: 'tKdcjJoXeEY', thumnNum: 0 },
 	{vID: 'su6_bKJJk74', thumnNum: 0 },
 	{vID: 'MU4HMhic6AU', thumnNum: 0 },
