@@ -1,4 +1,4 @@
-.videoButton {
+.thumbButton {
 	position: relative;
 	min-width: 75px;
 	max-width:200px;
@@ -17,11 +17,11 @@
 
 }
 
-.videoButton:hover {
+.thumbButton:hover {
 	transform: scale(1.05);
 }
 
-.videoButton:active {
+.thumbButton:active {
 	transform: scale(.95);
 }
 

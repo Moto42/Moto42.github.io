@@ -46,7 +46,6 @@ function parseThumbNumFromString(cardString) {
 	}
 }
 
-
 var player;
 
 function onYouTubeIframeAPIReady(){
@@ -60,33 +59,39 @@ function onYouTubeIframeAPIReady(){
 }
 
 function onPlayerReady(){
-	return "Plyaer ready";
+	return "Player ready";
 }
 
 function onPlayerStateChange(event){
 
 	switch (event.data){
 
-		case -1:
-			buttonsActive = false;
-			player.getIframe().classList.remove('hidden');
+		case -1: //unstarted
+			//Shut off the buttons and render the player window.
 			break;
 
-		case 0:
-			buttonsActive = true;
-			player.getIframe().classList.add('hidden');
+		case 0: //ended
+		// turn on the buttons and hide player window
 			break;
 
-		case 1:
+		case 1: //playing
 			break;
 
-		case 3:
+		case 2: //paused
+		// turn on the buttons and hide player window
 			break;
 
-		default:
-			console.log(event.data);
-			buttonsActive = true;
-			player.getIframe().classList.add('hidden');
+		case 3: //buffering
+			break;
+
+		//case 4: //Not listed in API
+
+		case 5: //video cued
+			break;
+
+		default: //This will probably be an error state.
+		// turn on the buttons and hide player window
+		new RangeError(`YouTube embeded player in an unknown state: ${event.data}`)
 	}
 }
 

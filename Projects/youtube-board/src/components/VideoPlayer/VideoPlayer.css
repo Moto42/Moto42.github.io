@@ -1,3 +1,26 @@
-#playerFrame {
-	display : none;
+.videoBackground {
+	
+	display: flex;
+	justify-content: center;
+	align-content: center;
+
+	width: 100%;
+	height: 100%;
+
+	position: fixed;
+	z-index: 4;
+	top: 0%;
+
+	background: rgba(55, 73, 85, 0.7);
+	
+}
+
+.videoContainer{ 
+
+	/*width: 100%;*/
+
+	position: fixed;
+	z-index: 5;
+	top: 15%;
+
 }

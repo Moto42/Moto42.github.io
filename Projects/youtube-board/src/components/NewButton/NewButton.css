@@ -1,0 +1,20 @@
+.newButton {
+	background: white;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	z-index: 5;
+}
+
+.newButtonBackground {
+
+	width: 100%;
+	height: 100%;
+
+	position: fixed;
+	z-index: 4;
+	top: 0%;
+
+	background: rgba(55, 73, 85, 0.7);
+	
+}
