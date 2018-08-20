@@ -15,7 +15,7 @@ class ThumbButton extends Component {
 	render = () => {
 
 		return (
-			<div onClick={ this._callback }className='thumbButton'>
+			<div onClick={ this._callback }className='thumbButton pointy'>
 			<img className='buttonCover' alt='' src={buttonCover} />
 			<img className='buttonImage' alt='' src={`https://img.youtube.com/vi/${this.props.videoID}/${this.props.thumbNum}.jpg`} />
 			</div>

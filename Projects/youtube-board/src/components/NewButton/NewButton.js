@@ -7,16 +7,18 @@ class NewButton extends Component {
 		super();
 
 		this.state = {
-			vID : 'HiE7FmIKOQ0',
+			vID : '',
 		}
 	}
 
 	getVID = (event) => {
-		const entered = event.target.value;
+		let entered = event.target.value;
 
 		if(entered.includes('youtube.com')){
-			//Strip out the vID
-			console.log('url entered');
+			const vPosition = entered.indexOf('v=');
+			let ampPosition = entered.indexOf('&');
+			if(ampPosition === -1) { ampPosition = entered.length };
+			entered = entered.substring(vPosition+2, ampPosition);
 		} 
 		this.setState({vID: entered})
 	}
@@ -26,11 +28,11 @@ class NewButton extends Component {
 			<div className='newButtonBackground'>
 
 				<div className='newButton'>
-				<input type='text' onChange={this.getVID} />
-			
-				<ThumbSelector vID={this.state.vID} submitNewButton={this.props.submit} />
+					YouTube VideoID: <input type='text' onChange={this.getVID} />
+				
+					{this.state.vID !== '' ? <ThumbSelector vID={this.state.vID} submitNewButton={this.props.submit} /> : ''}
 
-				<button onClick={this.props.cancel}>Cancel</button>
+					<button className='cancelButton pointy' onClick={this.props.cancel}>Cancel</button>
 				</div>
 			
 			</div>

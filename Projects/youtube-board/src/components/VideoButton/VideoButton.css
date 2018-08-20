@@ -1,11 +1,11 @@
 .videoButton {
 	position: relative;
-	min-width: 75px;
-	max-width:200px;
-	width : 50%;
-	height: auto;
-
 	overflow: hidden;
+	
+	width : 12%;
+	height: auto;
+	min-width: 100px;
+	max-width:200px;
 
 	margin: .5%;
 
@@ -15,6 +15,7 @@
 	border-top: 10px;
 	border-color: #cdcbbc;
 
+	box-shadow: 4px 5px 4px 0px dimgrey;
 }
 
 .videoButton:hover {

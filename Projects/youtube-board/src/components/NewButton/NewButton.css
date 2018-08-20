@@ -1,10 +1,27 @@
 .newButton {
-	background: white;
 	position: absolute;
 	top: 10%;
 	left: 10%;
 	z-index: 5;
+
+	padding: 10px;
+
+	border-radius: 15%;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-width: 4px;
+	border-color: silver;
+
+	box-shadow: 4px 5px 4px 1px dimgrey;
+
+	background: ghostwhite;
 }
+
+
+.cancelButton {
+	
+}
+
 
 .newButtonBackground {
 
@@ -16,5 +33,4 @@
 	top: 0%;
 
 	background: rgba(55, 73, 85, 0.7);
-	
 }

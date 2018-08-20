@@ -13,7 +13,7 @@ class VideoButton extends Component {
 
 	render = () => {
 		return (
-			<div onClick={ ()=> this.props.callback(this.videoID) }className='videoButton'>
+			<div onClick={ ()=> this.props.callback(this.videoID) }className='videoButton pointy'>
 			<img className='buttonCover' alt='' src={buttonCover} />
 			<img className='buttonImage' alt={this.videoID} src={this.thumbURL} />
 			</div>
