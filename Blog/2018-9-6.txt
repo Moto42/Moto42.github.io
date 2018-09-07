@@ -1,0 +1,59 @@
+Know when to ask for help.
+
+Fixing it yourself is great. Hunting down and squashing bugs makes us better programmers.  We're paid to solve problems, not pawn them off on someone else at the drop of a hat.
+
+But at some point, we really should put it down and ask for help.
+
+For example, this morning I spent three hours debugging this in Node...
+
+~~~~
+const payload = {
+    'From': '+1'+numberImSendingFrom,
+    'To'  : '+1'+phoneImSendingTo,
+    'Body': messageImSending,
+}
+
+const stringPayload = querystring.stringify(payload);
+
+const requestDetails = {
+    'protocol': 'https:',
+    'hostname': 'api.twilio.com',
+    'method'  : 'POST',
+    'path'    : '/2010-04-01/Accounts/'+myTwiliTestSID+'/Messages.json',
+    'auth'    :  myTwiliTestSID+':'+myTwilioTestAuthToken,
+    'headers' : {
+        'Content-Type'  : 'application/x-www-form-urlencoded',
+        'Content-Length': Buffer.byteLength(stringPayload),
+    },
+};
+const req = https.request(requestDetails, callback); //Get request from Twilio
+req.write(stringPayload); //Load the text into the request
+req.end(); //Send text
+~~~~
+
+Expected Behavior: I POST a message to the Twilio test API. Then it pretends to send a text message, and returns a Status Code "200".
+Actual Behavior: Haha, no. Status "400" (bad request).
+
+Spend a few hours staring at this, and you will find that... it's good code. It should work.
+Change anything and it just breaks in new and interesting ways, all of which are a step backwards.
+
+Pick apart a dozen responses and and find only one message, repeated over and over again....
+`STATUS: 400`
+`STATUS MESSAGE : 'Bad Request'`
+
+Spend two hours after work staring and Googling away at it and finally find that the TEST API only allows you 'send' from special 'magic numbers'.
+
+* \*Change `'To': '+1'+magicNumber,`\*
+* \*It works\*
+* \*Bang head on desk\*
+
+So yea, I learned a bit; like how I should read the docs more thoroughly. Not anything worth that much time and frustration.
+
+But I just realized, that if I had stopped after the first hour or two, whipped up that example you just read, and posted it to the forums, or Stack Overflow, and just asked for help; someone would have seen my error and shown it to me almost instantly. It's simple for anyone who's used the Twilio API before to see what went wrong, but I'm not familiar with it at all and was blind to it.
+
+I think that object lesson in knowing when to just step back and ask for help was worth the time it took to learn.
+
+
+
+
+
