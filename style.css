@@ -1,30 +1,36 @@
 
 
 html {
-	
+	--background-color : #1a2828;
+	--text-primary     : #f7fbdc;
+	--text-alt         : #ff9658;
+	--text-link        : #FFFFFF;
+}
+
+html {
+
 	width: 100%;
-	
+
 	height: 100%;
 }
 
 body {
-	
+
 	width: 99%;
-	
+
 	height: 100%;
 
-	background-color: #1a2828;
+	background-color: var(--background-color);
 
-	color: #f7fbdc;
+	color: var(--text-primary);
 }
 
 .bannerBig{
-	
+
 	width: 100%;
-	
+
 	height: 45%;
 }
-
 
 .bannerSmall{
 
@@ -39,20 +45,17 @@ body {
 	max-width: 85%;
 }
 
-
 #topbanner {
-	
+
 	background-image: url("images/skyline.jpg");
-	
+
 	background-size: cover;
 
 	background-position: 80% 50%;
-	
+
 	background-attachment: scroll;
 
-
-	color: #ff9658;
-
+	color: var(--text-alt);
 
 	display: grid;
 
@@ -60,10 +63,9 @@ body {
 
 	grid-template-columns: 5% auto 30%;
 
-	border-radius: 0% 0% 20% 5%;
+	border-radius: 0% 0% 6rem 1rem;
+	/* border-radius: 0% 0% 20% 5%; */
 }
-
-
 
 #topbanner>.container {
 
@@ -76,9 +78,8 @@ body {
 
 }
 
-
 #topbanner>.container>h2, #topbanner>.container>h3, #topbanner>.container > h4 {
- 	
+
 }
 
 .layout3{
@@ -93,11 +94,8 @@ body {
 
 }
 
-
 .col{
 	width: 30%;
-
-
 }
 
 @media only screen and (max-width: 777px){
@@ -134,7 +132,6 @@ body {
 #section1{
 
 }
-
 
 #finePrint {
 	margin-top: 10px;
