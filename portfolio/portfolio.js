@@ -16,8 +16,10 @@ document.addEventListener("DOMContentLoaded", function() {
       else {
         closeAllTiles(projectTiles);
         tile.classList.remove('closed');
-        tile.scrollIntoView({behavior:'smooth',alignToTop:true});
       }
+    });
+    tile.getElementsByClassName("project_details")[0].addEventListener("transitionend",function(event){
+      if(!tile.classList.contains('closed') && event.propertyName==='height') tile.scrollIntoView({behavior:'smooth',alignToTop:true});
     });
   }
 });
