@@ -1,5 +1,7 @@
-.project_tile{}
+.project_tile{
+}
   .project_miniview{
+    width: 99vw;
     position: relative;
   }
     .project_title{
@@ -12,12 +14,13 @@
     .project_image{
       filter: blur(0px);
       transition: filter .8s;
-      width: 99vw;
+      width: 99%;
       overflow: hidden;
     }
   .project_details{
     max-height: 20em;
-    transition: max-height .8s;
+    max-width : 100em;
+    transition: max-height .8s, max-width .8s;
   }
     .project_description{
       text-align: justify;
@@ -76,8 +79,41 @@
 
 .closed > .project_details{
   max-height: 0em;
+  max-width: 0px;
   overflow: hidden;
 }
 .closed .project_image {
-  filter:blur(10px);
+  filter:blur(7px);
+}
+
+@media (min-width: 340px) {
+  #portfolio {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .project_tile {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+  }
+  .closed {
+    order: 10;
+  }
+  .project_miniview{
+    max-width: 300px;
+    display: inline-block;
+  }
+  .project_details{
+    max-height: unset;
+    transition: unset;
+    max-width: 40rem;
+    transition: max-width .8s;
+  }
+  .closed > .project_details{
+    max-width: 0rem;
+    overflow: hidden;
+  }
+
 }
