@@ -19,7 +19,10 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
     tile.getElementsByClassName("project_details")[0].addEventListener("transitionend",function(event){
-      if(!tile.classList.contains('closed') && event.propertyName==='max-height') tile.scrollIntoView({behavior:'smooth',alignToTop:true});
+      if(
+        !tile.classList.contains('closed') &&
+          (event.propertyName==='max-height' || event.propertyName==='max-width')
+      ) tile.scrollIntoView({behavior:'smooth',alignToTop:true});
     });
   }
 });
