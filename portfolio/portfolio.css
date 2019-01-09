@@ -86,17 +86,21 @@
   filter:blur(7px);
 }
 
-@media (min-width: 340px) {
+@media (min-width: 450px) {
+  body {
+  }
   #portfolio {
     justify-content: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 950px;
   }
   .project_tile {
     order: 1;
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
   .closed {
     order: 10;
