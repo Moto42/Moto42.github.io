@@ -1,4 +1,10 @@
 .project_tile{
+  margin: .5rem;
+  border-radius: .5rem;
+  background-color: var(--background-color-faded);
+  background-image: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.4' w… x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E);
+  background-attachment: fixed;
+  background-size: cover;
 }
   .project_miniview{
     width: 99vw;
@@ -13,6 +19,7 @@
       padding-bottom: 1em;
     }
     .project_image{
+      border-radius: .5rem;
       filter: blur(0px);
       transition: filter .8s;
       width: 99%;
