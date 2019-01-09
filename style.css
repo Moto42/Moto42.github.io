@@ -1,10 +1,15 @@
 
 
 html {
-	--background-color : #1a2828;
-	--text-primary     : #f7fbdc;
-	--text-alt         : #ff9658;
-	--text-link        : #FFFFFF;
+	--background-color : #241C28;
+	--text-primary     : #C2B4AC;
+	--text-alt         : #83A7BD;
+	--text-link        : #7A6B6F;
+	--text-important   : #9C54A4;
+}
+
+a {
+	color: var(--text-link);
 }
 
 html {
