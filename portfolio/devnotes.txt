@@ -1,0 +1,32 @@
+<!-- Heierarchy, make all these things
+DOCUMENT
+  HTML
+    BODY
+      <NAV>
+        nav element? Home
+        nav element? Hesume
+        nav element? Contact
+      MAIN #portfolio
+        SECTION .project_tile /#project_name
+          .project_miniview
+            .project_title(h3)
+            .project_image
+          .project_details
+            .project_description
+            .project_skills
+              .skill
+                .skill_icon
+                .skill_name
+              .skill...
+              .skill...
+            .project_links
+              .project_view
+                .view_icon
+                .view_text
+              .project_code
+                .code_icon
+                .code_text
+              .project_github
+                .github_icon
+                .github_text
+             -->
