@@ -15,7 +15,7 @@
 
 	<main class=layout3 id="section1">
 
-		<div class="col" id="resume-tile">
+		<div class="col tileBGTexture" id="resume-tile">
 			<a href="resume/resume.html">
 				<img class="colImg" src="images/paperpencil.jpg">
 				<h1>Resume</h1>
@@ -23,7 +23,7 @@
 			<p>The 'web safe' version of my resume.<br>Just like the real thing, but without my address.</p>
 		</div>
 
-		<div class="col" id="portfolio-tile">
+		<div class="col tileBGTexture" id="portfolio-tile">
 			<a href="portfolio/portfolio.html">
 				<img class="colImg" src="images/whiteboarding.jpg">
 				<h1>Projects Portfolio</h1>
@@ -31,23 +31,28 @@
 			A few of my projects.
 		</div>
 
-		<div class="col" id="contact-tile">
-			<img class="colImg" src="images/contact.jpg">
-			<h1>Contact Me</h1>
+		<div class="col tileBGTexture" id="contact-tile">
+			<a href="#contact" id="contact-link">
+				<img class="colImg" src="images/contact.jpg">
+				<h1>Contact Me</h1>
+			</a>
 			<p>Looking for a full-stack developer?</br>Drop me a line and you will hear from me soon.</p>
 
 		</div>
 
 	</main>
-	<section id="contact" name="contact">
-		<form action="https://formspree.io/moto42@gmail.com" method="POST" />
-			<input    id="contact-name"    type="text"  name="Name"    placeholder="Name"          required >
-			<input    id="contact-email"   type="email" name="Email"   placeholder="Email"         required >
-			<input    id="contact-phone"   type="text"  name="Phone"   placeholder="Phone number"            pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" >
-			<input    id="contact-company" type="text"  name="Company" placeholder="company" >
-			<textarea id="contact-message"              name="message" rows="5" cols="50"          required  >
-			</textarea>
-			<input    id="contact-submit"  type="submit" value="Submit" >
+	<section id="contact" name="contact" class="tileBGTexture">
+		<form id="contact-form" action="https://formspree.io/moto42@gmail.com" method="POST" />
+			<p id="contact-paragraph">
+				Please use this form to contact me.<br>I will contact you soon.<br>Thankyou.
+			</p>
+			<div id=contact-required>Fields marked with a <span class="required"></span> are required.</div>
+			<label class="required" >Name   </label> <input    id="contact-name"    type="text"  name="Name"    placeholder="Name"          required >
+			<label class="required" >Email  </label> <input    id="contact-email"   type="email" name="Email"   placeholder="Email"         required >
+			<label                  >Phone  </label> <input    id="contact-phone"   type="text"  name="Phone"   placeholder="Phone number"            pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" >
+			<label                  >Company</label> <input    id="contact-company" type="text"  name="Company" placeholder="company" >
+			<label id="contact-label-message" class="required" >Message</label> <textarea id="contact-message"              name="message" rows="15" cols="60"          required  ></textarea>
+			<input id="contact-submit" class="button" type="submit" value="Submit" >
 		</form>
 	</section>
 
@@ -56,5 +61,6 @@
 	<footer id="finePrint">
 		&copy Wesley Williams 2018. Images from <a href="https://www.Pexels.com">Pexels.com</a>. Background from <a href="https://www.SVGBackgrounds.com.">SVGBackgrounds.com</a>.
 	</footer>
+	<script src="script.js" charset="utf-8"></script>
 </body>
 </html>
