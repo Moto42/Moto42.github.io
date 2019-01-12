@@ -20,8 +20,30 @@ h3 {
   grid-template-areas:
     " headline     headline          contact         "
     " skillsCerts  summaryProjects   summaryProjects "
-    " profiles     profiles          profiles        "
+    " profiles     profiles          profiles        ";
 }
+
+#navDownload {
+  display: flex;
+  flex-direction: row;
+};
+
+#navigation {
+};
+
+.download {
+  background: red;
+  justify-self: flex-end;
+  border-style: solid;
+  border-radius: .25rem;
+};
+
+.hidden {
+  display : none;
+}
+
+
+
 
 #headline{
   grid-area: headline;
@@ -52,7 +74,7 @@ h3 {
 }
 
 #certsList > li:before{
-  content : "▻ "
+  content : "\25BB "
 }
 
 #certifications{
