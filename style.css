@@ -24,6 +24,17 @@ body {
 	color: var(--text-primary);
 }
 
+/* The navbar */
+nav {
+  font-size:    1.5rem;
+  margin-bottom: .3rem;
+}
+
+nav a {
+  color: var(--text-alt);
+}
+
+
 /* Background pattern */
 /* Background from SVGBackgrounds.com */
 body {
