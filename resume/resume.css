@@ -65,13 +65,26 @@ h3 {
   margin-bottom: 1rem;
 }
 
-.projectTitle {}
+.projectTitle {
+  font-size: 1.25rem;
+  font-style: italic;
+  text-decoration: underline;
+}
 
 .projectURL {}
 
 .projectDescription {}
 
 .projectSkills {}
+
+.skillsLabel {
+  text-decoration: underline;
+}
+
+.skill {
+  font-style: italic;
+}
+
 
 #profiles{
   grid-area: profiles;
