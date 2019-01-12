@@ -1,0 +1,45 @@
+
+#resume {
+  max-width: 9in;
+  display: grid;
+  grid-template-areas:
+    " headline     headline         contact         "
+    " skillsCerts  summaryProjects  summaryProjects "
+    " profiles     profiles         profiles        "
+}
+
+#headline{
+  grid-area: headline;
+}
+
+#contact{
+  grid-area: contact;
+}
+
+#skillsCerts {
+  grid-area: skillsCerts;
+}
+
+#technicalSkills{
+
+}
+
+#certifications{
+
+}
+
+#summaryProjects {
+  grid-area: summaryProjects;
+}
+
+#summary {
+
+}
+
+#projects{
+
+}
+
+#profiles{
+
+}
