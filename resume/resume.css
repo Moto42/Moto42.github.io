@@ -1,0 +1,129 @@
+
+h3 {
+  margin-top: .1rem;
+  margin-bottom: .5rem;
+}
+
+.blankList {
+  list-style: none;
+  text-indent: -1.5rem;
+}
+
+#resume {
+  margin-top: .5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  max-width: 9in;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    " headline     headline          contact         "
+    " skillsCerts  summaryProjects   summaryProjects "
+    " profiles     profiles          profiles        ";
+}
+
+#navDownload {
+  display: flex;
+  flex-direction: row;
+};
+
+#navigation {
+};
+
+.download {
+  background: red;
+  justify-self: flex-end;
+  border-style: solid;
+  border-radius: .25rem;
+};
+
+.hidden {
+  display : none;
+}
+
+
+
+
+#headline{
+  grid-area: headline;
+}
+
+#headline > h1{
+  font-size: 3rem;
+  margin-top: .1rem;
+  margin-bottom: .15rem;
+}
+
+#headline > h2{
+  font-size: 1.1rem;
+  margin-top: 0rem;
+  margin-bottom: .25rem;
+}
+
+#contactInfo{
+  grid-area: contact;
+}
+
+#skillsCerts {
+  grid-area: skillsCerts;
+}
+
+#technicalSkills{
+
+}
+
+#certsList > li:before{
+  content : "\25BB "
+}
+
+#certifications{
+
+}
+
+#summaryProjects {
+  grid-area: summaryProjects;
+}
+
+#summary {
+}
+
+#summary > p {
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+}
+
+#projects{
+
+}
+
+.project{}
+
+.project:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.projectTitle {
+  font-size: 1.25rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.projectURL {}
+
+.projectDescription {}
+
+.projectSkills {}
+
+.skillsLabel {
+  text-decoration: underline;
+}
+
+.skill {
+  font-style: italic;
+}
+
+
+#profiles{
+  grid-area: profiles;
+}
