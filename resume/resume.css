@@ -12,11 +12,11 @@ h3 {
 #resume {
   max-width: 9in;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-    " headline     headline        contact          contact         "
-    " skillsCerts  summaryProjects summaryProjects  summaryProjects "
-    " profiles     profiles        profiles         profiles        "
+    " headline     headline          contact         "
+    " skillsCerts  summaryProjects   summaryProjects "
+    " profiles     profiles          profiles        "
 }
 
 #headline{
