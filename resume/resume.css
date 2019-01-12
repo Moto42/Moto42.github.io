@@ -33,14 +33,14 @@ nav {
   margin-bottom: .3rem;
 }
 
+nav a {
+  color: var(--text-alt);
+}
+
 #navigation {
 }
 
 .download {
-  background: red;
-  justify-self: flex-end;
-  border-style: solid;
-  border-radius: .25rem;
 }
 
 .hidden {
