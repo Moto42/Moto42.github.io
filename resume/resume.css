@@ -10,6 +10,10 @@ h3 {
 }
 
 #resume {
+  margin-top: .5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   max-width: 9in;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
