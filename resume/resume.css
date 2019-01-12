@@ -1,18 +1,28 @@
 
+h3 {
+  margin-top: .1rem;
+  margin-bottom: .5rem;
+}
+
+.blankList {
+  list-style: none;
+}
+
 #resume {
   max-width: 9in;
   display: grid;
+  grid-template-columns: 1tr 1tr 1tr;
   grid-template-areas:
-    " headline     headline         contact         "
-    " skillsCerts  summaryProjects  summaryProjects "
-    " profiles     profiles         profiles        "
+    " headline     headline        headline         contact         "
+    " skillsCerts  summaryProjects summaryProjects  summaryProjects "
+    " profiles     profiles        profiles         profiles        "
 }
 
 #headline{
   grid-area: headline;
 }
 
-#contact{
+#contactInfo{
   grid-area: contact;
 }
 
@@ -22,6 +32,10 @@
 
 #technicalSkills{
 
+}
+
+#certsList > li:before{
+  content : "▻ "
 }
 
 #certifications{
@@ -39,6 +53,18 @@
 #projects{
 
 }
+
+.project {
+  margin-bottom: 1rem;
+}
+
+.projectTitle {}
+
+.projectURL {}
+
+.projectDescription {}
+
+.projectSkills {}
 
 #profiles{
 
