@@ -28,6 +28,11 @@ h3 {
   flex-direction: row;
 };
 
+nav {
+  font-size:    1.5rem;
+  margin-bottom: .3rem;
+}
+
 #navigation {
 };
 
