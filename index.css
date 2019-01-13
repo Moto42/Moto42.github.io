@@ -1,6 +1,12 @@
+body {
+	--maxContentWidth : 845px;
+}
+
+main { max-width: var(--maxContentWidth)}
 
 .bannerBig{
 	width: 99.8%;
+	max-width: var(--maxContentWidth);
 	height: 42vh;
 }
 
@@ -13,9 +19,8 @@
 }
 
 #topbanner {
-	display: grid;
-	grid-template-rows: 1%	 auto;
-	grid-template-columns: 5% auto 30%;
+	display: flex;
+	flex-direction: row;
 
 	background-image: url("images/skyline.jpg");
 	background-size: cover;
