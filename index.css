@@ -85,7 +85,11 @@ main { max-width: var(--maxContentWidth)}
 
 }
 
-.col>h1{
+.col > a {
+	font-family: var(--fontStack-sans);
+}
+.col h1 {
+	font-size: 1.9em;
 }
 
 #section1{
