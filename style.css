@@ -1,5 +1,5 @@
 
-/* Color definitions */
+/* Color definitions  and font stacks*/
 html {
 	--background-color       : white;
 	--background-color-tile  : white;
@@ -7,7 +7,11 @@ html {
 	--text-alt               : darkgrey;
 	--text-link              : blue;
 	--text-important         : red;
+
+	--fontStack-sans : "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
+
+
 
 a {
 	color: var(--text-link);
@@ -19,6 +23,7 @@ html {
 }
 
 body {
+	position: relative;
 	display : flex;
 	flex-direction: column;
 	align-items: center;
@@ -27,15 +32,29 @@ body {
 }
 
 /* The navbar */
+/* a cern style navbar */
+nav > a,
 nav {
-  font-size:    1.5rem;
-  margin-bottom: .3rem;
+	position: relative;
+	font-family: var(--fontStack-sans);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	margin-right: 2rem;
+	margin-left: 2rem;
+}
+nav > .selected {
+	text-decoration: underline;
 }
 
-nav a {
-  color: var(--text-alt);
+@media print {
+	footer {
+		display: none;
+	}
+	nav {
+		display : none;
+	}
 }
-
 
 /* Background pattern */
 /* Background from SVGBackgrounds.com */
