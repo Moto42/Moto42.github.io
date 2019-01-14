@@ -1,17 +1,30 @@
 
 
+body {
+  max-width: 8in;
+}
 
-.bannerBig {}
+.bannerBig {
 
-.tile {}
+}
+
+.tile {
+  width: 1fr;
+  margin: .25rem .5rem .25rem .5rem;
+
+}
 
 .tileImg {
-  width: 200px
+  width: 100%;
+  height: auto;
 }
 
 #logo {}
 
-#heroBanner {}
+#heroBanner {
+  height: 45vh;
+  background-color: gainsboro;
+}
 
 #bannerHeader {}
 
@@ -19,9 +32,14 @@
   text-transform: capitalize;
 }
 
-#pages {}
+#pages {
+  display: flex;
+  flex-direction: row;
+}
 
-#resume-tile {}
+#resume-tile {
+
+}
 
 #portfolio-tile {}
 
