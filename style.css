@@ -31,7 +31,9 @@ body {
 	align-items: center;
 	width: 99%;
 	color: var(--text-primary);
-	font-family: var(--fontStack-sytem)
+	font-family: var(--fontStack-sytem);
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* The navbar */
