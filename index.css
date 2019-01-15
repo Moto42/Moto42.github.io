@@ -22,11 +22,17 @@ body {
 #logo {}
 
 #heroBanner {
-  height: 45vh;
+  height: 30vh;
   background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#bannerHeader {}
+#bannerHeader {
+
+}
 
 #bannerText {
   text-transform: capitalize;
@@ -46,3 +52,5 @@ body {
 #contact-tile {}
 
 #contactMe {}
+
+#contact-form {}
