@@ -53,4 +53,11 @@ body {
 
 #contactMe {}
 
-#contact-form {}
+#contact-form {
+  display: grid;
+  grid-template-columns: max-content max-content;
+}
+#contact-paragraph,
+#contact-required {
+  grid-column: span 2;
+}
