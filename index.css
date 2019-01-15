@@ -2,6 +2,14 @@
 
 body {
   max-width: 8in;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bannerBig {
@@ -10,8 +18,9 @@ body {
 
 .tile {
   width: 1fr;
-  margin: .25rem .5rem .25rem .5rem;
-
+}
+.tile:not(:last-of-type) {
+  margin-right: .5rem;
 }
 
 .tileImg {
@@ -23,6 +32,7 @@ body {
 
 #heroBanner {
   height: 30vh;
+  width: 100%;
   background-color: gainsboro;
   display: flex;
   flex-direction: column;
@@ -39,6 +49,8 @@ body {
 }
 
 #pages {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
   display: flex;
   flex-direction: row;
 }
@@ -51,15 +63,16 @@ body {
 
 #contact-tile {}
 
-#contactMe {}
+#contactMe {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 99vw;
+}
 
 #contact-form {
   display: grid;
   grid-template-columns: max-content max-content;
-}
-#contact-paragraph,
-#contact-required {
-  grid-column: span 2;
 }
 
 .required{
@@ -67,4 +80,38 @@ body {
 }
 .required::before {
   content: "*";
+}
+
+#contact-paragraph,
+#contact-required {
+  grid-column: span 2;
+}
+
+#contact-form label {
+	text-align: right;
+	align-self: center;
+  margin-right: .5rem;
+}
+#contact-form input {
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+    width: 100%;
+
+}
+#contact-form #contact-label-message {
+	align-self: baseline;
+}
+
+#contact-message {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  width: 100%;
+  grid-row: span 2;
+}
+
+#contact-submit {
+  height: 1.5rem;
+  align-self: flex-end;
 }
