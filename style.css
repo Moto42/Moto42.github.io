@@ -1,13 +1,35 @@
 html {
 	--fontstack-arial : Arial Black, Arial Bold, Gadget, sans-serif;
+	--fontstack-arial-narrow :  Arial Narrow, Arial, sans-serif;
 }
 
 body {
   max-width: 1100px;
 }
 
+.onionHeaderBorder {
+	border-style: solid;
+	border-color: gainsboro;
+	border-width: 1px 0 1px 0;
+}
+
+.onionItemBorder {
+	color: grey !important;
+	display: inline-block;
+	border-style: solid;
+	border-color: gainsboro !important;
+	border-width: 0  1px 0 1px;
+}
+
 .font-arial {
 	font-family: var(--fontstack-arial);
+}
+.font-arial-narrow {
+	font-family: var(--fontstack-arial-narrow)
+}
+
+.uppercase {
+	text-transform: uppercase;
 }
 
 .undrln {
