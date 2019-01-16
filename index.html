@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -7,7 +8,127 @@
     <title>Wesley Williams</title>
   </head>
   <body>
-    
+    <header class="navbar">
+      <section class="navbar-section">
+        <a href="resume/resume.html" class="btn btn-link">Resume</a>
+    		<a href="portfolio/portfolio.html" class="btn btn-link">Projects</a>
+    		<a href="#contact" class="btn btn-link">Contact</a>
+      </section>
+      <section class="navbar-center">
+        <a href="#!" class="navbar-brand mr-5">Wesley Williams</a>
+      </section>
+      <section class="navbar-section">
+
+      </section>
+    </header>
+    <section   id="hero" class="hero hero-sm">
+      <div class="p-centered">
+        <h1>
+          Wesley Williams
+        </h1>
+        <p>
+          Self Taught Full Stack Developer
+        </p>
+      </div>
+    </section>
+    <main  class="container">
+      <section class="columns">
+
+        <div id="tile-resume" class="card p-centered column col-xs-12 col-sm-6 col-md-4">
+          <div class="card-img">
+            <img class="img-responsive" src="images/placeholder.svg" alt="placeholder image">
+          </div>
+          <div class="card-header">
+            <a href="resume/resume.html" class="card-title h5">
+              Resume
+            </a>
+            <div class="card-body">
+              <p>
+                The 'web safe' version of my resume.<br>Just like the real thing, but without my home address and phone number.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="tile-projects" class="card p-centered column col-xs-12 col-sm-6 col-md-4">
+          <div class="card-img">
+            <img class="img-responsive" src="images/placeholder.svg" alt="placeholder image">
+          </div>
+          <div class="card-header">
+            <a href="portfolio/portfolio.html" class="card-title h5">
+              Projects
+            </a>
+            <div class="card-body">
+              <p>
+                A few of my projects.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="tile-contact" class="card p-centered column col-xs-12 col-sm-6 col-md-4 hide-sm">
+          <div class="card-img">
+            <img class="img-responsive" src="images/placeholder.svg" alt="placeholder image">
+          </div>
+          <div class="card-header">
+            <a href="#contact" class="card-title h5 contactLink">
+              Contact Me
+            </a>
+            <div class="card-body">
+              <p>
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section id="contact" class="columns">
+        <div class=" p-centered column col-lg-6 col-4 text-center">
+          <h3>Contact Me</h3>
+          <p class="text-left">
+            Looking for a full-stack developer?</br>
+            Drop me a line and you will hear from me soon.<br>
+            Alternatively, email me at <a href="Moto42@gmail.com">Moto42@gmail.com</a>.<br>
+            Thankyou.
+          </p>
+        </div>
+        <form class="text-center p-centered col-lg-12 col-8 form-horizontal" action="https://formspree.io/moto42@gmail.com" method="POST" />
+          <div class="form-group"><!-- Name -->
+            <label class=" p-right form-label col-sm-12 col-2" for="contact-name">Name</label>
+            <div class="show-sm col-1"></div>
+            <input type="text" class="col-sm-10 col-sm-mx-auto col-9 form-input" name="Name" id="contact-name" required>
+          </div>
+          <div class="form-group"><!-- Email -->
+            <label class=" p-right form-label col-sm-12 col-2" for="contact-email">Email</label>
+            <div class="show-sm col-1"></div>
+            <input type="email" class="col-sm-10 col-sm-mx-auto col-9 form-input" name="Email" id="contact-email" required>
+          </div>
+          <div class="form-group"><!-- Phone -->
+            <label class=" p-right form-label col-sm-12 col-2" for="contact-phone">Phone</label>
+            <div class="show-sm col-1"></div>
+            <input type="tel" class="col-sm-10 col-sm-mx-auto col-9 form-input" name="Phone" id="contact-phone" >
+          </div>
+          <div class="form-group"><!-- Company -->
+            <label class=" p-right form-label col-sm-12 col-2" for="contact-company">Company</label>
+            <div class="show-sm col-1"></div>
+            <input type="text" class="col-sm-10 col-sm-mx-auto col-9 form-input" name="Company" id="contact-company" >
+          </div>
+          <div class="form-group"><!-- Message -->
+            <label class=" p-right form-label col-sm-12 col-2" for="contact-message">Message</label>
+            <div class="show-sm col-1"></div>
+            <textarea class="col-sm-10 col-sm-mx-auto col-9 form-input" name="Message" id="contact-message" rows="5" required></textarea>
+          </div>
+          <div class="form-group"><!-- Submit -->
+            <label class=" p-right form-label col-sm-12 col-2" for="contact-submit">Submit</label>
+            <div class="show-sm col-1"></div>
+            <input type="submit" class="col-sm-10 col-sm-mx-auto col-9 " name="Submit" id="contact-submit" >
+          </div>
+        <form>
+      </section>
+      <footer>
+        &copy; 2019 Wesley Williams. Built with <a href="https://picturepan2.github.io/spectre/index.html">Spectre.css</a>
+      </footer>
+    </main>
+
     <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
