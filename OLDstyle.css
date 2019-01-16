@@ -1,0 +1,80 @@
+
+/* Color definitions  and font stacks*/
+html {
+	--background-color       : white;
+	--background-color-tile  : white;
+	--text-primary           : black;
+	--text-alt               : darkgrey;
+	--text-link              : blue;
+	--text-important         : red;
+
+	--fontStack-sans   : "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+		/* system font stack stolen from WordPress */
+	--fontStack-system : -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+
+
+a {
+	color: var(--text-link);
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	position: relative;
+	display : flex;
+	flex-direction: column;
+	align-items: center;
+	width: 99%;
+	color: var(--text-primary);
+	font-family: var(--fontStack-sytem);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* The navbar */
+/* a cern style navbar */
+nav > a,
+nav {
+	position: relative;
+	font-family: var(--fontStack-sans);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	margin-right: 2rem;
+	margin-left: 2rem;
+}
+nav > .selected {
+	text-decoration: underline;
+}
+
+@media print {
+	footer {
+		display: none;
+	}
+	nav {
+		display : none;
+	}
+}
+
+/* Background pattern */
+/* Background from SVGBackgrounds.com */
+body {
+	background-color: var(--background-color);
+}
+
+
+/* improved background image for .col */
+
+.tileBGTexture{
+	background-color: var(--background-color-tile);
+}
+
+#finePrint {
+	margin-top: 10px;
+	font-size: smaller;
+}
