@@ -2,6 +2,7 @@ function addSmoothScrollToContactMe(contactLink){
   contactLink.addEventListener("click",event => {
     event.preventDefault();
     document.getElementById("contact-form").scrollIntoView({behavior:'smooth'});
+    document.getElementById("contact-name").focus({preventScroll:true});
   });
 }
 
