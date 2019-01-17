@@ -1,81 +1,168 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="google-site-verification" content="5Gwiox45vZOMHtTQ9UlJq02ryvNh_RA322-O1KRYL98" />
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<title>Wesley Williams</title>
-</head>
-<body>
-	<nav id="navigation">
-		<a href="resume/resume.html">Resume</a>
-		<a href="portfolio/portfolio.html">Projects</a>
-		<a href="#contact">Contact</a>
-	</nav>
-	<section class="bannerBig" id="topbanner">
-		<div class="container">
-			<h1>Wesley Williams</h1>
-			<h3>Full Stack developer.</h3>
-		</div>
-	</section>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="5Gwiox45vZOMHtTQ9UlJq02ryvNh_RA322-O1KRYL98" />
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Wesley Williams</title>
+  </head>
+  <body class="p-centered">
+    <!-- <header class="navbar">
+      <div class="navbar-section hide-sm">
+        <a href="resume/resume.html" class="btn btn-link">Resume</a>
+    		<a href="portfolio/portfolio.html" class="btn btn-link">Projects</a>
+    		<a href="#contact-form" class="btn btn-link contactLink">Contact</a>
+      </div>
+      <div class="navbar-section show-sm">
+        <div class="dropdown">
+          <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+            <span class="mx-2 text-bold">&#9776;</span>
+          </a>
+          <ul class="menu">
+            <li><a href="resume/resume.html" class="btn btn-link">Resume</a></li>
+            <li><a href="portfolio/portfolio.html" class="btn btn-link">Projects</a></li>
+            <li><a href="#contact-form" class="btn btn-link contactLink">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center         ">
+        <a href="#!" class="navbar-brand">Wesley Williams</a>
+      </div>
+      <div class="navbar-section        ">
+      </div>
+    </header> -->
+    <!-- <header class="navbar font-arial">
+      <div class="navbar-section hide-sm ">
+        <a href="#!" class="navbar-brand">Wesley Williams</a>
+      </div>
+      <div class="navbar-center          uppercase" >
+        <a href="resume/resume.html" class="btn btn-link undrln">Resume</a>
+    		<a href="portfolio/portfolio.html" class="btn btn-link undrln">Projects</a>
+    		<a href="#contact-form" class="btn btn-link contactLink undrln">Contact</a>
+      </div>
+      <div class="navbar-section        ">
+      </div>
+    </header> -->
+    <header class="navbar mt-1 font-arial-narrow onionHeaderBorder dont-print"><!-- Onion -->
+      <div class="navbar-section        ">
+      </div>
+      <div class="navbar-center  uppercase" >
+        <a href="resume/resume.html" class="onionItemBorder btn btn-link undrln">Resume</a>
+    		<a href="portfolio/portfolio.html" class="onionItemBorder btn btn-link undrln">Projects</a>
+    		<a href="#contact-form" class="onionItemBorder btn btn-link contactLink undrln">Contact</a>
+      </div>
+      <div class="navbar-section        ">
+      </div>
+    </header>
+    <section   id="hero" class="hero hero-sm bg-dark">
+      <div class="p-centered">
+        <h1 class="font-arial-narrow">
+          Wesley Williams
+        </h1>
+        <p class="  font-arial-narrow">
+          Self Taught Full Stack Developer
+        </p>
+      </div>
+    </section>
+    <main  class="container">
+      <section class="columns">
 
-	<main class=layout3 id="section1">
+        <div id="tile-resume" class="card p-centered column col-xs-12 col-sm-6 col-md-4">
+          <div class="card-img">
+            <img class="img-responsive p-centered" src="images/resume.svg" alt="Resume">
+          </div>
+          <div class="card-header">
+            <a href="resume/resume.html" class="card-title h5">
+              Resume
+            </a>
+            <div class="card-body">
+              <p>
+                The 'web safe' version of my resume.<br>Just like the real thing, but without my home address and phone number.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="tile-projects" class="card p-centered column col-xs-12 col-sm-6 col-md-4">
+          <div class="card-img">
+            <img class="img-responsive p-centered" src="images/flowchart.svg" alt="placeholder image">
+          </div>
+          <div class="card-header">
+            <a href="portfolio/portfolio.html" class="card-title h5">
+              Projects
+            </a>
+            <div class="card-body">
+              <p>
+                A few of my projects.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="tile-contact" class="card p-centered column col-xs-12 col-sm-6 col-md-4 hide-sm">
+          <div class="card-img">
+            <img class="img-responsive p-centered" src="images/speechbubble.svg" alt="placeholder image">
+          </div>
+          <div class="card-header">
+            <a href="#contact-form" class="card-title h5 contactLink">
+              Contact Me
+            </a>
+            <div class="card-body">
+              <p>
 
+              </p>
+            </div>
+          </div>
+        </div>
 
-		<div class="col tileBGTexture" id="resume-tile">
-
-			<a href="resume/resume.html">
-				<img class="colImg" src="images/paperpencil.jpg">
-				<h1>Resume</h1>
-			</a>
-			<p>The 'web safe' version of my resume.<br>Just like the real thing, but without my address.</p>
-		</div>
-
-
-		<div class="col tileBGTexture" id="portfolio-tile">
-
-			<a href="portfolio/portfolio.html">
-				<img class="colImg" src="images/whiteboarding.jpg">
-				<h1>Projects Portfolio</h1>
-			</a>
-			A few of my projects.
-		</div>
-
-
-		<div class="col tileBGTexture" id="contact-tile">
-			<a href="#contact" id="contact-link">
-				<img class="colImg" src="images/contact.jpg">
-				<h1>Contact Me</h1>
-			</a>
-
-			<p>Looking for a full-stack developer?</br>Drop me a line and you will hear from me soon.</p>
-
-		</div>
-
-	</main>
-	<section id="contact" class="tileBGTexture" name="contact" >
-		<form id="contact-form" action="https://formspree.io/moto42@gmail.com" method="POST" />
-			<p id="contact-paragraph">
-				Please use this form to contact me.<br>
-				I will contact you soon.<br>
-				Alternatively, email me at <a href="Moto42@gmail.com">Moto42@gmail.com</a>.<br>
-				Thankyou.
-			</p>
-			<div id=contact-required>Fields marked with a <span class="required"></span> are required.</div>
-			<label class="required" >Name   </label> <input    id="contact-name"    type="text"  name="Name"    placeholder="Name"          required >
-			<label class="required" >Email  </label> <input    id="contact-email"   type="email" name="Email"   placeholder="Email"         required >
-			<label                  >Phone  </label> <input    id="contact-phone"   type="text"  name="Phone"   placeholder="Phone number"            pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" >
-			<label                  >Company</label> <input    id="contact-company" type="text"  name="Company" placeholder="company" >
-			<label id="contact-label-message" class="required" >Message</label> <textarea id="contact-message"  name="message"              required  rows="15" cols="60" ></textarea>
-			<input id="contact-submit" class="button" type="submit" value="Submit" >
-		</form>
-	</section>
-
-<footer id="finePrint">
-		&copy Wesley Williams 2018. Images from <a href="https://www.Pexels.com">Pexels.com</a>. Background from <a href="https://www.SVGBackgrounds.com.">SVGBackgrounds.com</a>.
-	</footer>
-	<script src="script.js" charset="utf-8"></script>
-
-</body>
+      </section>
+      <section id="contact-form" class="columns">
+        <div class=" p-centered column col-lg-6 col-4 text-center">
+          <h3>Contact Me</h3>
+          <p class="text-left">
+            Looking for a full-stack developer?</br>
+            Drop me a line and you will hear from me soon.<br>
+            Alternatively, email me at <a href="Moto42@gmail.com">Moto42@gmail.com</a>.<br>
+            Thankyou.
+          </p>
+        </div>
+        <form class="text-center p-centered col-lg-12 col-8 form-horizontal" action="https://formspree.io/moto42@gmail.com" method="POST" />
+          <div class="form-group"><!-- Name -->
+            <label class=" p-right form-label col-sm-12 col-2" for="contact-name">Name</label>
+            <div class="show-sm col-1"></div>
+            <input type="text" class="col-sm-10 col-sm-mx-auto col-9 form-input" name="Name" id="contact-name" required>
+          </div>
+          <div class="form-group"><!-- Email -->
+            <label class=" p-right form-label col-sm-12 col-2" for="contact-email">Email</label>
+            <div class="show-sm col-1"></div>
+            <input type="email" class="col-sm-10 col-sm-mx-auto col-9 form-input" name="Email" id="contact-email" required>
+          </div>
+          <div class="form-group"><!-- Phone -->
+            <label class=" p-right form-label col-sm-12 col-2" for="contact-phone">Phone</label>
+            <div class="show-sm col-1"></div>
+            <input type="tel" class="col-sm-10 col-sm-mx-auto col-9 form-input" name="Phone" id="contact-phone" >
+          </div>
+          <div class="form-group"><!-- Company -->
+            <label class=" p-right form-label col-sm-12 col-2" for="contact-company">Company</label>
+            <div class="show-sm col-1"></div>
+            <input type="text" class="col-sm-10 col-sm-mx-auto col-9 form-input" name="Company" id="contact-company" >
+          </div>
+          <div class="form-group"><!-- Message -->
+            <label class=" p-right form-label col-sm-12 col-2" for="contact-message">Message</label>
+            <div class="show-sm col-1"></div>
+            <textarea class="col-sm-10 col-sm-mx-auto col-9 form-input" name="Message" id="contact-message" rows="5" required></textarea>
+          </div>
+          <div class="form-group"><!-- Submit -->
+            <label class=" p-right form-label col-sm-12 col-2" for="contact-submit">Submit</label>
+            <div class="show-sm col-1"></div>
+            <input type="submit" class="col-sm-10 col-sm-mx-auto col-9 " name="Submit" id="contact-submit" >
+          </div>
+        <form>
+      </section>
+    </main>
+    <footer class="bg-dark text-small">
+      &copy; 2019 Wesley Williams. Built with <a href="https://picturepan2.github.io/spectre/index.html">Spectre.css</a>
+    </footer>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
 </html>

@@ -1,0 +1,174 @@
+body {
+	--maxContentWidth : 845px;
+}
+
+main { max-width: var(--maxContentWidth)}
+
+.bannerBig{
+	width: 99.8%;
+	max-width: var(--maxContentWidth);
+	height: 42vh;
+}
+
+.bannerSmall{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 20%;
+	max-width: 85%;
+}
+
+#topbanner {
+	display: flex;
+	flex-direction: row;
+
+	background-image: url("images/skyline.jpg");
+	background-size: cover;
+	background-position: 80% 50%;
+	background-attachment: scroll;
+
+	border-style: groove;
+	border-radius: 0% 0% 6rem 1rem;
+	border-width: .05rem .2rem .3rem .05rem;
+
+	color: var(--text-alt);
+}
+
+#topbanner>.container {
+ 	grid-row: 2 / 3;
+ 	grid-column: 2 / 3
+}
+
+#topbanner>.container > h1 {
+}
+
+#topbanner>.container>h2, #topbanner>.container>h3, #topbanner>.container > h4 {
+}
+
+.layout3{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1%;
+	flex-wrap: wrap;
+}
+
+.col{
+	width: 30%;
+	background: var(--background-color-faded);
+	border-radius: 20% 5% 20% 5%;
+	border-style: solid;
+	border-color: var(--background-color);
+	border-width: .02rem .1rem .15rem .02rem;
+}
+
+
+@media only screen and (max-width: 777px){
+	.col {
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 525px){
+	.col {
+		width: 90%;
+	}
+}
+
+
+.colImg{
+	width: 100%;
+	height: 30%;
+	border-radius: 20% 5% 20% 5%;
+	border-style: solid;
+	border-color: var(--text-link);
+	border-width: .02rem .15rem .2rem .02rem;
+
+}
+
+.col > a {
+	font-family: var(--fontStack-sans);
+}
+.col h1 {
+	font-size: 1.9em;
+}
+
+#section1{
+}
+
+
+/* Contact Form */
+.button {
+	color : var(--text-primary);
+}
+
+#contact{
+	display: inline-block;
+	padding-right: .5rem;
+	padding-bottom:.5rem;
+	margin: 1rem;
+	border-radius: 20% 5% 5% 5%;
+	border-style: solid;
+	border-color: var(--background-color);
+	border-width: .02rem .1rem .15rem .02rem;
+}
+
+#contact-form {
+	position: relative;
+	display: inline-grid;
+	grid-template-columns: max-content max-content;
+	flex-direction : column;
+	justify-content : flex-start;
+}
+
+#contact label {
+	text-align: right;
+	align-self: center;
+}
+
+#contact label::after {
+	content:":";
+}
+
+#contact .required::before {
+	color: var(--text-important);
+	content:"*";
+}
+
+#contact input,
+#contact textarea {
+	color : var(--text-primary);
+	background-color: var(--background-color-faded);
+	margin-top: .25rem;
+	margin-left: .5rem;
+}
+
+#contact-paragraph {
+	grid-column: 2;
+	margin-bottom: .25rem;
+}
+
+#contact-required {
+	text-align: right;
+	grid-column: 1 / span 2;
+}
+
+#contact #contact-name {}
+
+#contact #contact-email {}
+
+#contact #contact-phone {}
+
+#contact #contact-company {}
+
+#contact #contact-label-message {
+	align-self: baseline;
+}
+
+#contact #contact-message {
+	border-radius: 0 0 .5rem 0;
+}
+
+#contact #contact-submit {
+	position: absolute;
+	bottom: 0%;
+}
