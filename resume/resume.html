@@ -1,137 +1,32 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../OLDstyle.css">
-    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Wesley Williams</title>
   </head>
-  <body>
-    <nav id="navigation">
-      <a href="../index.html">Home</a>
-      <a href="../portfolio/portfolio.html">Projects</a>
-      <a href="../index.html#contact">Contact</a>
-      Download:
-      <a href="" id="printButton" class="hidden download">print</a>
-      <a class="download" href="/docs/resume.doc">.doc</a>
-      <a class="download" href="/docs/resume.pdf">.pdf</a>
-    </nav>
-    <main id="resume" class="">
-      <section id="headline">
-        <h1>Wesley Williams</h1>
-        <h2>Self-taught, Full Stack Developer</h2>
-      </section>
-      <section id="contactInfo">
-        <ul class="blankList">
-          <li>&#x1F3E0;  Located in Tyler Texas</li>
-          <li> &#9992; will relocate</li>
-          <li>&#9993; moto42@gmail.com</li>
-          <li>&#9743;  &#9618;&#9618;&#9618;-&#9618;&#9618;&#9618;-&#9618;&#9618;&#9618;&#9618;</li>
-        </ul>
-      </section>
-      <section id="skillsCerts">
-        <section id="technicalSkills">
-          <h3>Technical Skills</h3>
-          <!--
-            ● &#9679;
-            ○ &#9675;
-          -->
-          <ul class='blankList'>
-            <li>&#9679; HTML</li>
-            <li>&#9679; Web Design</li>
-            <li>&#9679; CSS</li>
-            <li>&#9679; Javascript</li>
-            <li>&#9679; Node.js</li>
-            <li>&#9679; React.js</li>
-            <li>&#9679; Git</li>
-            <li>&#9679; MongoDB</li>
-            <li>&#9679; MySQL</li>
-          </ul>
-        </section>
-        <section id="certifications">
-          <h3>Certifications</h3>
-            Free Code Camp
-          <ul id="certsList" class='blankList'>
-            <li>Full Stack Certification</li>
-            <li>Responsive Web Design</li>
-            <li>Javascript Algorithms and Data Structures</li>
-            <li>Front End Libraries</li>
-            <li>Data Visualization</li>
-            <li>APIs and Microservices</li>
-            <li>Information Security and Quality Assurance</li>
-          </ul>
-        </section>
-      </section>
-      <section id="summaryProjects">
-        <section id="summary">
-          <h3>Career Objectives/Summary</h3>
-          <p>
-            Fill in this section.
-            Become less boring and better at writing resumes.
-            Put all the buzzwords in a single paragraph.
-          </p>
-        </section>
-        <section id="projects">
-          <h3>Selected Projects</h3>
-          <div class="project">
-            <div class="projectTitle">Full Portfolio</div>
-            <div class="projectURL"> <a href="https://moto42.github.io/portfolio/index.html"> https://moto42.github.io/portfolio/index.html </a> </div>
-            <div class="projectDescription">A page to better display some projects. Uses Vanilla JavaScript to control CSS transitions and keep selected project in view when opened.</div>
-            <div class="projectSkills"><span class="skillsLabel">Skills demonstrated:</span>
-              <span class="skill">HTML</span>, <span class="skill">CSS</span>,
-              <span class="skill">Javascript</span>,
-              <span class="skill">Responsive Web Design</span>
-            </div>
-          </div>
-          <div class="project">
-            <div class="projectTitle">Personal Library Catalog Back End</div>
-            <div class="projectDescription">A Node.js server presenting a REST API to track and inventory books in a relational database. Also delivers a web-app front end. Made without Express, only dependencies are Node and MySQL for Node. Deployed on Heroku. </div>
-            <div class="projectSkills"><span class="skillsLabel">Skills demonstrated:</span>
-              <span class="skill">Javascript</span>,
-              <span class="skill">Node.js</span>,
-              <span class="skill">REST APIs</span>,
-              <span class="skill">MySQL</span>
-            </div>
+  <body class="container">
+    <header class="navbar mt-1 font-arial-narrow onionHeaderBorder dont-print">
+      <div class="navbar-section        ">
+      </div>
+      <div class="navbar-center  uppercase" >
+        <a href="resume/resume.html" class="onionItemBorder btn btn-link undrln">Resume</a>
+        <a href="portfolio/portfolio.html" class="onionItemBorder btn btn-link undrln">Projects</a>
+        <a href="#contact-form" class="onionItemBorder btn btn-link contactLink undrln">Contact</a>
+      </div>
+      <div class="navbar-section        ">
+      </div>
+    </header>
 
-          </div>
-          <div class="project">
-            <div class="projectTitle">Personal Library Catalog Front End</div>
-            <div class="projectURL"> <a href="http://m42catalog.herokuapp.com/"> http://m42catalog.herokuapp.com/ </a> </div>
-            <div class="projectDescription">A Single Page Application written with React.js. Allows user to lookup books by keyword, filter the results, and add new books and locations to keep them in to the database on the back end.</div>
-            <div class="projectSkills"><span class="skillsLabel">Skills demonstrated:</span>
-              <span class="skill">HTML</span>,
-              <span class="skill">CSS</span>,
-              <span class="skill">Javascript</span>,
-              <span class="skill">React.js</span>,
-              <span class="skill">REST APIs</span>
-            </div>
-          </div>
-          <div class="project">
-            <div class="projectTitle">Anonymous Message Board</div>
-            <div class="projectURL"> <a href=" https://m42-messageboard.glitch.me"> https://m42-messageboard.glitch.me </a> </div>
-            <div class="projectDescription">Wrote a REST API, database logic, and functional tests for the back end. Redesigned the front end to be an actual message board rather than just an API testing tool.</div>
-            <div class="projectSkills"><span class="skillsLabel">Skills demonstrated:</span>
-              <span class="skill">HTML</span>,
-              <span class="skill">CSS</span>,
-              <span class="skill">Javascript</span>,
-              <span class="skill">Repsonsive Web Design</span>,
-              <span class="skill">Node.js</span>,
-              <span class="skill">Express.js</span>,
-              <span class="skill">automated function testing</span>,
-              <span class="skill">REST API</span>,
-              <span class="skill">UX Design</span>
-            </div>
-          </div>
-        </section>
-      </section>
-      <section id="profiles">
-        <h3>Profiles</h3>
-        <ul class="blankList">
-          <li>GitHub : <a href="https://github.com/Moto42">https://github.com/Moto42</a></li>
-          <li>LinkedIn : <a href="https://www.linkedin.com/in/wesley-williams-01a288a2">https://www.linkedin.com/in/wesley-williams-01a288a2</a></li>
-          <li>Stack Overflow : <a href="https://stackoverflow.com/users/10033855/wesley-williams">https://stackoverflow.com/users/10033855/wesley-williams</a></li>
-        </ul>
-      </section>
+    <main class="container">
+
+
+
     </main>
+
+    <footer class="bg-dark text-small dont-print">
+      &copy; 2019 Wesley Williams. Built with <a href="https://picturepan2.github.io/spectre/index.html">Spectre.css</a>
+    </footer>
     <script src="resume.js" charset="utf-8"></script>
   </body>
 </html>
