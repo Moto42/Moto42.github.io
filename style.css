@@ -122,8 +122,9 @@ footer {
 
 
 @media only screen and (max-width: 600px) {
-	.col-mx-sm {
+	.cx-sm {
 		justify-content: center;
+		text-align: center;
 	}
 }
 
