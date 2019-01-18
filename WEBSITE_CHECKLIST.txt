@@ -1,0 +1,62 @@
+
+
+Front Page
+
+☑ Content should be centered
+☑ Should have a navigation bar at the top
+☑ navigation bar should resize/adapt to screen-size, not to that 
+
+wierd thing..
+☑ White Background
+☑ content and layout scale/adapt to screen size.
+☑ Contact form scales to screen size.
+☑ choose either image or color for herobanner.
+☑ find images for the three cards.
+☑ images in tiles should not appear squashed/stretched.
+☑ images should be sized something close to their display size
+☑ Improve the look of the navigation bar. 
+
+Resume
+
+☐ Summary Paragraph [b]still[/b] placeholder, fix this first.
+☐ Give the skills listed for each project more breathing room.
+☐ .doc and .pdf versions should have same content as the html version.
+☑ navigation bar includes link to print out the resume
+☑ navigation bar includes links to download a .doc and .pdf of 
+☑ White Background
+☑ Content should be centered
+☑ Should have a navigation bar at the top
+☑ navigation bar contains links to Home, Projects and Contact
+☑ Those links actualy work.the resume.
+☑ navigation bar should resize/adapt to screen-size.
+☑ navigation bar shouldnot appear in when printed out.
+☑ footer should not appear when printed out.
+☑ when printed out, entire page should fit on a single sheet of 
+
+paper.
+☑ When printed out, or viewed on a 'standar' monitor, layout 
+
+should closely resemble that of the pdf and .doc version.
+☑ Don't rank skills, just list.
+
+
+Projects
+
+☑ White Background
+☐ Content should be centered
+☐ Should have a navigation bar at the top
+☐ navigation bar should resize/adapt to screen-size.
+☐ each project has an image
+☐ each project has a brief description
+☐ each project lists 'skills demonstrated'.
+☐ each project will have a link to a live view of the page
+☐ each project will have a link to the github repo
+
+
+
+
+
+
+
+
+
