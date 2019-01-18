@@ -7,16 +7,31 @@
   </head>
   <body class="container bodyclamp-page">
     <header class="navbar mt-1 font-arial-narrow onionHeaderBorder dont-print">
-      <div class="navbar-section        ">
-      </div>
+			<div class="navbar-section        ">
+			</div>
       <div class="navbar-center  uppercase" >
         <a href="../index.html" class="onionItemBorder btn btn-link undrln">Home</a>
         <a href="../portfolio/portfolio.html" class="onionItemBorder btn btn-link undrln">Projects</a>
         <a href="../index.html#contact-form" class="onionItemBorder btn btn-link contactLink undrln">Contact</a>
       </div>
-      <div class="navbar-section        ">
-      </div>
-    </header>
+			<div class="navbar-section ">
+				<div class="hide-sm">
+					<a class=" btn btn-sm hidden download" href="" id="printButton" >print</a>
+					<a class=" btn btn-sm download" href="/docs/resume.doc">doc</a>
+					<a class=" btn btn-sm download" href="/docs/resume.pdf">pdf</a>
+				</div>
+				<div class="dropdown show-sm">
+					<a href="#" class="btn btn-link btn-sm dropdown-toggle" tabindex="0">
+						&#x2630;<span class="hide-xs"> Download</span>
+					</a>
+					<ul class="menu">
+						<li class="menu-item"><a class=" btn btn-sm hidden download" href="" id="printButton" >Print</a></li>
+						<li class="menu-item"><a class=" btn btn-sm download" href="/docs/resume.doc">.doc</a></li>
+						<li class="menu-item"><a class=" btn btn-sm download" href="/docs/resume.pdf">.pdf</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
 
     <main class="columns dont-print">
       <section id="headline"         class="col-8 col-sm-12 cx-sm" >
