@@ -3,8 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"
+      integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+      crossorigin="anonymous">OA
+    </script>
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="portfolio.css">
     <title>Wesley Williams</title>
   </head>
   <body class="p-centered">
@@ -21,8 +26,62 @@
 		</header>
     <main class="container">
 
+      <section class="columns"> <!-- This portfolio -->
+        <div class="col-4 col-sm-12 mr-2"><!--project picture-->
+          <img class="w-100" src="images/portfolio.png" alt="A Portfolio Page">
+        </div>
+        <div class="col-7 col-sm-12" >
+          <h3 class="p-centered text-center font-arial-narrow">This Portfolio</h3>
+          <p> <!-- Description -->
+            A simple portfolio to show off some projects.
+          </p>
+          <div class=""> <!-- Skills List -->
+            <h4 class="p-centered text-center">Skills Demonstrated</h4>
+            <div class="skillList">
+              <div class="skill"><!-- html -->
+                <i class="fab fa-lg fa-html5 skill_icon"></i>
+                <span class="skill_name">HTML</span>
+              </div>
+              <div class="skill"><!-- css -->
+                <i class="fab fa-lg fa-css3-alt skill_icon"></i>
+                <span class="skill_name">CSS</span>
+              </div>
+              <div class="skill"><!-- javascript -->
+                <i class="fab fa-lg fa-js-square skill_icon"></i>
+                <span class="skill_name">JavaScript</span>
+              </div>
+              <div class="skill"><!-- responsive design -->
+                <i class="far fa-lg fa-object-group skill_icon"></i>
+                <span class="skill_name">Responsive Design</span>
+              </div>
+              <div class="skill"><!-- ux design -->
+                <i class="fas fa-lg fa-user-cog skill_icon"></i>
+                <span class="skill_name">UX Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="project_links"> <!-- Project Links -->
+            <div class="project_link">
+              <!-- <i class="fas fa-eye-slash view_icon"></i> -->
+              <a href="https://moto42.github.io/portfolio/index.html">
+                <i class="fas fa-lg fa-eye view_icon"></i>
+                <span class="view_text">View</span>
+              </a>
+            </div>
+            <div class="project_link">
+              <a href="https://github.com/Moto42/Moto42.github.io/tree/master/portfolio">
+                <i class="fab fa-lg fa-github github_icon"></i>
+                <span class="github_text">GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
     </main>
-    <footer class="bg-dark text-small">
+    <footer class="bg-dark text-small dont-print">
       &copy; 2019 Wesley Williams. Built with <a href="https://picturepan2.github.io/spectre/index.html">Spectre.css</a>
     </footer>
   </body>

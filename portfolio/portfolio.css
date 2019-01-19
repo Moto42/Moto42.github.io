@@ -1,0 +1,18 @@
+
+.project_links,
+.skillList {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+i {
+
+}
