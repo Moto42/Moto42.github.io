@@ -1,99 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Wesley Williams</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"
       integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
-      crossorigin="anonymous">
+      crossorigin="anonymous">OA
     </script>
-    <link rel="stylesheet" href="../OLDstyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="portfolio.css">
+    <title>Wesley Williams</title>
   </head>
-  <body>
-    <nav id="navigation">
-      <a href="../index.html">Home</a>
-      <a href="../resume/resume.html">Resume</a>
-      <a href="../index.html#contact">Contact</a>
-    </nav>
-    <main id="portfolio">
-      <section class="project_tile tileBGTexture" id="thisPortfolio">
-        <div class="project_miniview">
-          <h3 class="project_title">This Portfolio</h3>
-          <img
-          class="project_image"
-          src="images/portfolio.png"
-          alt="The page you are currently viewing."
-          >
+  <body class="p-centered">
+    <header class="navbar mt-1 font-arial-narrow onionHeaderBorder dont-print">
+  		<div class="navbar-section">
+      </div>
+      <div class="navbar-center  uppercase" >
+        <a href="../index.html" class="onionItemBorder btn btn-link undrln">Home</a>
+        <a href="../resume/resume.html" class="onionItemBorder btn btn-link undrln">Resume</a>
+        <a href="../index.html#contact-form" class="onionItemBorder btn btn-link contactLink undrln">Contact</a>
+      </div>
+  		<div class="navbar-section ">
+  		</div>
+		</header>
+    <main class="container">
+
+      <section class="columns project_tile"> <!-- Catalog Backend -->
+        <div class="col-4 col-sm-12 mr-2 project_image"><!--project picture-->
+          <img class="w-100" src="images/cardcatalog-backend.png" alt="placeholder">
         </div>
-        <div class="project_details">
-          <p class="project_description">
-            A page to display selected projects. Uses CSS media queries to responsively adjust to the users device.<br>
-            Uses Vanilla Javascript to control CSS transitions and keep selected project in view when opend.
-          </p>
-          <div class="project_skills">
-            <h4>Skills Demonstrated</h4>
-            <div class="project_skills_list">
-              <div class="skill"><!-- html -->
-                <i class="fab fa-html5 skill_icon"></i>
-                <span class="skill_name">HTML</span>
-              </div>
-              <div class="skill"><!-- css -->
-                <i class="fab fa-css3-alt skill_icon"></i>
-                <span class="skill_name">CSS</span>
-              </div>
-              <div class="skill"><!-- javascript -->
-                <i class="fab fa-js-square skill_icon"></i>
-                <span class="skill_name">JavaScript</span>
-              </div>
-              <div class="skill"><!-- responsive design -->
-                <i class="far fa-object-group skill_icon"></i>
-                <span class="skill_name">Responsive Design</span>
-              </div>
-              <div class="skill"><!-- ux design -->
-                <i class="fas fa-user-cog skill_icon"></i>
-                <span class="skill_name">UX Design</span>
-              </div>
-            </div>
-          </div>
-          <div class="project_links">
-            <div class="project_view">
-              <!-- <i class="fas fa-eye-slash view_icon"></i> -->
-              <a href="https://moto42.github.io/portfolio/index.html">
-                <i class="fas fa-eye view_icon"></i>
-                <span class="view_text">View</span>
-              </a>
-            </div>
-            <div class="project_github">
-              <a href="https://github.com/Moto42/Moto42.github.io/tree/master/portfolio">
-                <i class="fab fa-github github_icon"></i>
-                <span class="github_text">GitHub</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="project_tile tileBGTexture" id="libraryCatalog-BackEnd">
-        <div class="project_miniview">
-          <h3 class="project_title">Personal Library Catalog : Back End</h3>
-          <img
-          class="project_image"
-          src="images/cardcatalog-backend.png"
-          alt="Code for a Node.js server"
-          >
-        </div>
-        <div class="project_details">
-          <p class="project_description">
+        <div class="col-7 col-sm-12" >
+          <h3 class="p-centered my-1 text-center font-arial-narrow">Card Catalog - Back End</h3>
+          <p class="my-1 py-0"> <!-- Description -->
             A server presenting REST API to track and inventory books in a relational
             database. Also delivers a web-app front end. Made without Express.js, it's
             only dependencies are Node.js and MySQL for Node.<br>
             Originaly deployed to Heroku, then migrated to Glitch.io.
           </p>
-          <div class="project_skills">
-            <h4>Skills Demonstrated</h4>
-            <div class="project_skills_list">
+          <div class=""> <!-- Skills List -->
+            <h4 class="p-centered my-1 text-center">Skills Demonstrated</h4>
+            <div class="skillList">
               <div class="skill"><!-- javascript -->
                 <i class="fab fa-js-square skill_icon"></i>
                 <span class="skill_name">JavaScript</span>
@@ -112,42 +59,34 @@
               </div>
             </div>
           </div>
-          <div class="project_links">
-            <div class="project_view noPointer">
-              <i class="fas fa-eye-slash view_icon"></i>
-              <span class="view_text"><s>View</s></span>
-            </div>
+          <div class="project_links"> <!-- Project Links -->
             <div class="project_code">
               <a href="https://glitch.com/edit/#!/m42-cardcatalog">
-                <i class="fas fa-code code_icon"></i>
+                <i class="fas fa-lg fa-code code_icon"></i>
                 <span class="code_text">Code</span>
               </a>
             </div>
             <div class="project_github">
               <a href="https://github.com/Moto42/card-catalog">
-                <i class="fab fa-github github_icon"></i>
+                <i class="fab fa-lg fa-github github_icon"></i>
                 <span class="github_text">GitHub</span>
               </a>
             </div>
           </div>
         </div>
       </section>
-      <section class="project_tile tileBGTexture" id="libraryCatalog-FrontEnd">
-        <div class="project_miniview">
-          <h3 class="project_title">Personal Library Catalog, Front end</h3>
-          <img
-          class="project_image"
-          src="images/cardcatalog-frontend.png"
-          alt="A website with an 'edit book' menu open"
-          >
+      <section class="columns project_tile"> <!-- Catalog FrontEnd -->
+        <div class="col-4 col-sm-12 mr-2 project_image"><!--project picture-->
+          <img class="w-100" src="images/cardcatalog-frontend.png" alt="A website with an 'edit book' menu open">
         </div>
-        <div class="project_details">
-          <p class="project_description">
+        <div class="col-7 col-sm-12" >
+          <h3 class="p-centered my-1 text-center font-arial-narrow">Card Catalog - Front End</h3>
+          <p class="my-1 py-0"> <!-- Description -->
             A Single Page Application written with React.js. Allows user to lookup books by keyword, filter the results, and add new books and locations to keep them in to the database on the back end.
           </p>
-          <div class="project_skills">
-            <h4>Skills Demonstrated</h4>
-            <div class="project_skills_list">
+          <div class=""> <!-- Skills List -->
+            <h4 class="p-centered my-1 text-center">Skills Demonstrated</h4>
+            <div class="skillList">
               <div class="skill"><!-- html -->
                 <i class="fab fa-html5 skill_icon"></i>
                 <span class="skill_name">HTML</span>
@@ -178,7 +117,7 @@
               </div>
             </div>
           </div>
-          <div class="project_links">
+          <div class="project_links"> <!-- Project Links -->
             <div class="project_view">
               <!-- <i class="fas fa-eye-slash view_icon"></i> -->
               <a href="https://m42-cardcatalog.glitch.me/">
@@ -195,23 +134,19 @@
           </div>
         </div>
       </section>
-      <section class="project_tile tileBGTexture" id="messageBoard">
-        <div class="project_miniview">
-          <h3 class="project_title">Anonymous Message Board</h3>
-          <img
-          class="project_image"
-          src="images/messageboard.png"
-          alt="A Message Board"
-          >
+      <section class="columns project_tile"> <!-- Empty Tile -->
+        <div class="col-4 col-sm-12 mr-2 project_image"><!--project picture-->
+          <img class="w-100" src="images/messageboard.png" alt="A Message Board">
         </div>
-        <div class="project_details">
-          <p class="project_description">
+        <div class="col-7 col-sm-12" >
+          <h3 class="p-centered my-1 text-center font-arial-narrow">Anonymous Message Board</h3>
+          <p class="my-1 py-0"> <!-- Description -->
             Wrote a REST API, database logic, and functional tests for the back end.<br>
             Redesigned the front end to be an actual message board rather than just an API testing tool
           </p>
-          <div class="project_skills">
-            <h4>Skills Demonstrated</h4>
-            <div class="project_skills_list">
+          <div class=""> <!-- Skills List -->
+            <h4 class="p-centered my-1 text-center">Skills Demonstrated</h4>
+            <div class="skillList">
               <div class="skill"><!-- html -->
                 <i class="fab fa-html5 skill_icon"></i>
                 <span class="skill_name">HTML</span>
@@ -258,7 +193,7 @@
               </div>
             </div>
           </div>
-          <div class="project_links">
+          <div class="project_links"> <!-- Project Links -->
             <div class="project_view">
               <!-- <i class="fas fa-eye-slash view_icon"></i> -->
               <a href="https://m42-messageboard.glitch.me">
@@ -281,10 +216,82 @@
           </div>
         </div>
       </section>
+      <section class="columns project_tile"> <!-- This portfolio -->
+        <div class="col-4 col-sm-12 mr-2 project_image"><!--project picture-->
+          <img class="w-100" src="images/portfolio.png" alt="A Portfolio Page">
+        </div>
+        <div class="col-7 col-sm-12" >
+          <h3 class="p-centered text-center font-arial-narrow">This Portfolio</h3>
+          <p> <!-- Description -->
+            A simple portfolio to show off some projects.
+          </p>
+          <div class=""> <!-- Skills List -->
+            <h4 class="p-centered text-center">Skills Demonstrated</h4>
+            <div class="skillList">
+              <div class="skill"><!-- html -->
+                <i class="fab fa-lg fa-html5 skill_icon"></i>
+                <span class="skill_name">HTML</span>
+              </div>
+              <div class="skill"><!-- css -->
+                <i class="fab fa-lg fa-css3-alt skill_icon"></i>
+                <span class="skill_name">CSS</span>
+              </div>
+              <div class="skill"><!-- javascript -->
+                <i class="fab fa-lg fa-js-square skill_icon"></i>
+                <span class="skill_name">JavaScript</span>
+              </div>
+              <div class="skill"><!-- responsive design -->
+                <i class="far fa-lg fa-object-group skill_icon"></i>
+                <span class="skill_name">Responsive Design</span>
+              </div>
+              <div class="skill"><!-- ux design -->
+                <i class="fas fa-lg fa-user-cog skill_icon"></i>
+                <span class="skill_name">UX Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="project_links"> <!-- Project Links -->
+            <div class="project_view">
+              <!-- <i class="fas fa-eye-slash view_icon"></i> -->
+              <a href="https://moto42.github.io/portfolio/index.html">
+                <i class="fas fa-lg fa-eye view_icon"></i>
+                <span class="view_text">View</span>
+              </a>
+            </div>
+            <div class="project_github">
+              <a href="https://github.com/Moto42/Moto42.github.io/tree/master/portfolio">
+                <i class="fab fa-lg fa-github github_icon"></i>
+                <span class="github_text">GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="columns hide"> <!-- Empty Tile -->
+        <div class="col-4 col-sm-12 mr-2 project_image"><!--project picture-->
+          <img class="w-100" src="images/placeholder.svg" alt="placeholder">
+        </div>
+        <div class="col-7 col-sm-12" >
+          <h3 class="p-centered my-1 text-center font-arial-narrow">This Portfolio</h3>
+          <p class="my-1 py-0"> <!-- Description -->
+            DESCRIPTION
+          </p>
+          <div class=""> <!-- Skills List -->
+            <h4 class="p-centered my-1 text-center">Skills Demonstrated</h4>
+            <div class="skillList">
+              SKILLS HERE
+            </div>
+          </div>
+          <div class="project_links"> <!-- Project Links -->
+            PROJECT LINKS
+          </div>
+        </div>
+      </section>
+
     </main>
-    <footer id="finePrint">
-      &copy Wesley William 2019. Background from <a href="SVGBackgrounds.com">SVGBackgrounds.com</a>.
+    <footer class="bg-dark text-small dont-print">
+      &copy; 2019 Wesley Williams. Built with <a href="https://picturepan2.github.io/spectre/index.html">Spectre.css</a>
     </footer>
-    <script src="portfolio.js" charset="utf-8"></script>
   </body>
 </html>

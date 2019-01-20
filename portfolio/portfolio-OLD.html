@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Wesley Williams</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"
+      integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+      crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="../OLDstyle.css">
+    <link rel="stylesheet" href="portfolio.css">
+  </head>
+  <body>
+    <nav id="navigation">
+      <a href="../index.html">Home</a>
+      <a href="../resume/resume.html">Resume</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <main id="portfolio">
+      <section class="project_tile tileBGTexture" id="thisPortfolio">
+        <div class="project_miniview">
+          <h3 class="project_title">This Portfolio</h3>
+          <img
+          class="project_image"
+          src="images/portfolio.png"
+          alt="The page you are currently viewing."
+          >
+        </div>
+        <div class="project_details">
+          <p class="project_description">
+            A page to display selected projects. Uses CSS media queries to responsively adjust to the users device.<br>
+            Uses Vanilla Javascript to control CSS transitions and keep selected project in view when opend.
+          </p>
+          <div class="project_skills">
+            <h4>Skills Demonstrated</h4>
+            <div class="project_skills_list">
+              <div class="skill"><!-- html -->
+                <i class="fab fa-html5 skill_icon"></i>
+                <span class="skill_name">HTML</span>
+              </div>
+              <div class="skill"><!-- css -->
+                <i class="fab fa-css3-alt skill_icon"></i>
+                <span class="skill_name">CSS</span>
+              </div>
+              <div class="skill"><!-- javascript -->
+                <i class="fab fa-js-square skill_icon"></i>
+                <span class="skill_name">JavaScript</span>
+              </div>
+              <div class="skill"><!-- responsive design -->
+                <i class="far fa-object-group skill_icon"></i>
+                <span class="skill_name">Responsive Design</span>
+              </div>
+              <div class="skill"><!-- ux design -->
+                <i class="fas fa-user-cog skill_icon"></i>
+                <span class="skill_name">UX Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="project_links">
+            <div class="project_view">
+              <!-- <i class="fas fa-eye-slash view_icon"></i> -->
+              <a href="https://moto42.github.io/portfolio/index.html">
+                <i class="fas fa-eye view_icon"></i>
+                <span class="view_text">View</span>
+              </a>
+            </div>
+            <div class="project_github">
+              <a href="https://github.com/Moto42/Moto42.github.io/tree/master/portfolio">
+                <i class="fab fa-github github_icon"></i>
+                <span class="github_text">GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project_tile tileBGTexture" id="libraryCatalog-BackEnd">
+        <div class="project_miniview">
+          <h3 class="project_title">Personal Library Catalog : Back End</h3>
+          <img
+          class="project_image"
+          src="images/cardcatalog-backend.png"
+          alt="Code for a Node.js server"
+          >
+        </div>
+        <div class="project_details">
+          <p class="project_description">
+            A server presenting REST API to track and inventory books in a relational
+            database. Also delivers a web-app front end. Made without Express.js, it's
+            only dependencies are Node.js and MySQL for Node.<br>
+            Originaly deployed to Heroku, then migrated to Glitch.io.
+          </p>
+          <div class="project_skills">
+            <h4>Skills Demonstrated</h4>
+            <div class="project_skills_list">
+              <div class="skill"><!-- javascript -->
+                <i class="fab fa-js-square skill_icon"></i>
+                <span class="skill_name">JavaScript</span>
+              </div>
+              <div class="skill"><!-- node -->
+                <i class="fab fa-node-js skill_icon"></i>
+                <span class="skill_name">Node.js</span>
+              </div>
+              <div class="skill"><!-- rest -->
+                <i class="fas fa-cog skill_icon"></i>
+                <span class="skill_name">REST APIs</span>
+              </div>
+              <div class="skill"><!-- mysql -->
+                <i class="fas fa-database skill_icon"></i>
+                <span class="skill_name">MySQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="project_links">
+            <div class="project_view noPointer">
+              <i class="fas fa-eye-slash view_icon"></i>
+              <span class="view_text"><s>View</s></span>
+            </div>
+            <div class="project_code">
+              <a href="https://glitch.com/edit/#!/m42-cardcatalog">
+                <i class="fas fa-code code_icon"></i>
+                <span class="code_text">Code</span>
+              </a>
+            </div>
+            <div class="project_github">
+              <a href="https://github.com/Moto42/card-catalog">
+                <i class="fab fa-github github_icon"></i>
+                <span class="github_text">GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project_tile tileBGTexture" id="libraryCatalog-FrontEnd">
+        <div class="project_miniview">
+          <h3 class="project_title">Personal Library Catalog, Front end</h3>
+          <img
+          class="project_image"
+          src="images/cardcatalog-frontend.png"
+          alt="A website with an 'edit book' menu open"
+          >
+        </div>
+        <div class="project_details">
+          <p class="project_description">
+            A Single Page Application written with React.js. Allows user to lookup books by keyword, filter the results, and add new books and locations to keep them in to the database on the back end.
+          </p>
+          <div class="project_skills">
+            <h4>Skills Demonstrated</h4>
+            <div class="project_skills_list">
+              <div class="skill"><!-- html -->
+                <i class="fab fa-html5 skill_icon"></i>
+                <span class="skill_name">HTML</span>
+              </div>
+              <div class="skill"><!-- css -->
+                <i class="fab fa-css3-alt skill_icon"></i>
+                <span class="skill_name">CSS</span>
+              </div>
+              <div class="skill"><!-- javascript -->
+                <i class="fab fa-js-square skill_icon"></i>
+                <span class="skill_name">JavaScript</span>
+              </div>
+              <div class="skill"><!-- responsive design -->
+                <i class="far fa-object-group skill_icon"></i>
+                <span class="skill_name">Responsive Design</span>
+              </div>
+              <div class="skill"><!-- ux design -->
+                <i class="fas fa-user-cog skill_icon"></i>
+                <span class="skill_name">UX Design</span>
+              </div>
+              <div class="skill"><!-- react -->
+                <i class="fab fa-react skill_icon"></i>
+                <span class="skill_name">React.js</span>
+              </div>
+              <div class="skill"><!-- rest -->
+                <i class="fas fa-cog skill_icon"></i>
+                <span class="skill_name">REST APIs</span>
+              </div>
+            </div>
+          </div>
+          <div class="project_links">
+            <div class="project_view">
+              <!-- <i class="fas fa-eye-slash view_icon"></i> -->
+              <a href="https://m42-cardcatalog.glitch.me/">
+                <i class="fas fa-eye view_icon"></i>
+                <span class="view_text">View</span>
+              </a>
+            </div>
+            <div class="project_github">
+              <a href="https://github.com/Moto42/card-catalog-frontend">
+                <i class="fab fa-github github_icon"></i>
+                <span class="github_text">GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project_tile tileBGTexture" id="messageBoard">
+        <div class="project_miniview">
+          <h3 class="project_title">Anonymous Message Board</h3>
+          <img
+          class="project_image"
+          src="images/messageboard.png"
+          alt="A Message Board"
+          >
+        </div>
+        <div class="project_details">
+          <p class="project_description">
+            Wrote a REST API, database logic, and functional tests for the back end.<br>
+            Redesigned the front end to be an actual message board rather than just an API testing tool
+          </p>
+          <div class="project_skills">
+            <h4>Skills Demonstrated</h4>
+            <div class="project_skills_list">
+              <div class="skill"><!-- html -->
+                <i class="fab fa-html5 skill_icon"></i>
+                <span class="skill_name">HTML</span>
+              </div>
+              <div class="skill"><!-- css -->
+                <i class="fab fa-css3-alt skill_icon"></i>
+                <span class="skill_name">CSS</span>
+              </div>
+              <div class="skill"><!-- javascript -->
+                <i class="fab fa-js-square skill_icon"></i>
+                <span class="skill_name">JavaScript</span>
+              </div>
+              <div class="skill"><!-- responsive design -->
+                <i class="far fa-object-group skill_icon"></i>
+                <span class="skill_name">Responsive Design</span>
+              </div>
+              <div class="skill"><!-- ux design -->
+                <i class="fas fa-user-cog skill_icon"></i>
+                <span class="skill_name">UX Design</span>
+              </div>
+              <div class="skill"><!-- react -->
+                <i class="fab fa-react skill_icon"></i>
+                <span class="skill_name">React.js</span>
+              </div>
+              <div class="skill"><!-- node -->
+                <i class="fab fa-html5 skill_icon"></i>
+                <span class="skill_name">Node.js</span>
+              </div>
+              <div class="skill"><!-- express -->
+                <i class="fas fa-server skill_icon"></i>
+                <span class="skill_name">Express.js</span>
+              </div>
+              <div class="skill"><!-- rest -->
+                <i class="fas fa-cog skill_icon"></i>
+                <span class="skill_name">REST APIs</span>
+              </div>
+              <div class="skill"><!-- mongo -->
+                <i class="skill_icon"><img src="images/mongoDB.svg"></i>
+                <span class="skill_name">MongoDB</span>
+              </div>
+              <div class="skill"><!-- automated testing -->
+                <i class="fas fa-vial skill_icon"></i>
+                <span class="skill_name">Automated Testing</span>
+              </div>
+            </div>
+          </div>
+          <div class="project_links">
+            <div class="project_view">
+              <!-- <i class="fas fa-eye-slash view_icon"></i> -->
+              <a href="https://m42-messageboard.glitch.me">
+                <i class="fas fa-eye view_icon"></i>
+                <span class="view_text">View</span>
+              </a>
+            </div>
+            <div class="project_code">
+              <a href="https://glitch.com/edit/#!/m42-messageboard">
+                <i class="fas fa-code code_icon"></i>
+                <span class="code_text">Code</span>
+              </a>
+            </div>
+            <div class="project_github">
+              <a href="https://github.com/Moto42/m42-messageboard/tree/glitch">
+                <i class="fab fa-github github_icon"></i>
+                <span class="github_text">GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="finePrint">
+      &copy Wesley William 2019. Background from <a href="SVGBackgrounds.com">SVGBackgrounds.com</a>.
+    </footer>
+    <script src="portfolio.js" charset="utf-8"></script>
+  </body>
+</html>
