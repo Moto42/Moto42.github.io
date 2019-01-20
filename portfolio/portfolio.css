@@ -1,3 +1,6 @@
+main {
+  width: 99%;
+}
 
 .project_links,
 .skillList {
@@ -8,6 +11,16 @@
   justify-content: center;
 }
 
+.project_image {
+  border-style: solid;
+  margin: .25rem;
+}
+
+.project_tile {
+  border-style: solid;
+  margin-top: .5rem;
+}
+
 .project_code,
 .project_github,
 .skill {
@@ -16,7 +29,7 @@
 }
 
 i img {
-  height: 1.5rem;
+  height: 1rem;
 }
 
 .skill_name {
