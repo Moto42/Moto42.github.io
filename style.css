@@ -107,15 +107,28 @@ footer {
 	left: 5%;
 }
 
+.projectDescription {
+	text-align: justify;
+}
+
 .projectTitle{
 	margin-top: .25rem;
 	font-weight: bold;
 }
 
-.projectSkills{
+.skillsLabel{
+	text-align: center;
+}
+.skillsList {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-.skillsLabel{
+.skill:not(:last-of-type) {
+	margin-right: 1rem
+
 }
 
 .w-100 {
