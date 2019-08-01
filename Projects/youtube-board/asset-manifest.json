@@ -1,13 +1,14 @@
 {
-  "main.css": "/Projects/youtube-board/static/css/main.7e3b52a8.chunk.css",
-  "main.js": "/Projects/youtube-board/static/js/main.00825919.chunk.js",
-  "main.js.map": "/Projects/youtube-board/static/js/main.00825919.chunk.js.map",
-  "static/js/1.3c647e42.chunk.js": "/Projects/youtube-board/static/js/1.3c647e42.chunk.js",
-  "static/js/1.3c647e42.chunk.js.map": "/Projects/youtube-board/static/js/1.3c647e42.chunk.js.map",
+  "main.css": "/Projects/youtube-board/static/css/main.95e3713d.chunk.css",
+  "main.js": "/Projects/youtube-board/static/js/main.9724e4ec.chunk.js",
+  "main.js.map": "/Projects/youtube-board/static/js/main.9724e4ec.chunk.js.map",
+  "static/js/1.75b092dd.chunk.js": "/Projects/youtube-board/static/js/1.75b092dd.chunk.js",
+  "static/js/1.75b092dd.chunk.js.map": "/Projects/youtube-board/static/js/1.75b092dd.chunk.js.map",
   "runtime~main.js": "/Projects/youtube-board/static/js/runtime~main.3ed36219.js",
   "runtime~main.js.map": "/Projects/youtube-board/static/js/runtime~main.3ed36219.js.map",
-  "static/css/main.7e3b52a8.chunk.css.map": "/Projects/youtube-board/static/css/main.7e3b52a8.chunk.css.map",
+  "static/media/overlay.png": "/Projects/youtube-board/static/media/overlay.0142c07f.png",
+  "static/css/main.95e3713d.chunk.css.map": "/Projects/youtube-board/static/css/main.95e3713d.chunk.css.map",
   "index.html": "/Projects/youtube-board/index.html",
-  "precache-manifest.7ccab0326ac335a2e3f4649c27669496.js": "/Projects/youtube-board/precache-manifest.7ccab0326ac335a2e3f4649c27669496.js",
+  "precache-manifest.7289493c326f9d50308db70dc52b513c.js": "/Projects/youtube-board/precache-manifest.7289493c326f9d50308db70dc52b513c.js",
   "service-worker.js": "/Projects/youtube-board/service-worker.js"
 }
