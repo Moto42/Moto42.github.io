@@ -4,24 +4,48 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/main.css">
 
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
     <title>Wesley Williams</title>
   </head>
-  <body class="flexpage">
-    <header>
-    <h1>Header</h1>
+  <body>
+    <div class="layout__content">
+      <header>
+    <nav>
+    <a href="/" class="nav__link nav__link--active">
+        Home
+    </a>
+    <a href="/resume.html" class="nav__link ">
+        Resume
+    </a>
+    <a href="/portfolio.html" class="nav__link ">
+        Portfolio
+    </a>
+</nav>
 </header>
-    <div class="flexpage__content">
       <main>
-    <h1>main</h1>
-</main>
+    <div class="hero_banner">
+        <div class="hero_banner__left">
+            <img class="hero_banner__img" src="/images/scruffybeard.jpg" alt="Wesley Williams">
+        </div>
+        <div class="hero_banner__right">
+            <h1>Wesley Williams</h1>
+            <h2>Full Stack Developer</h2>
+        </div>
     </div>
-    <footer>
-    <h1>Footer</h1>
+    <section class="blurb">
+        <p>I am a full stack developer concentrating on the MERN stack, and comfortable with JQuery, PHP and other current languages and tools.</p>
+        <p>I am looking for full-time position in the East Texas area, and am interested in relocating to the East Coast.</p>
+        <p>Here you can find <a href="/resume.html">my resume</a>, and see my current <a href="/portfolio.html">portfolio of projects</a>.</p>
+        <p>Feel free to contact me at <a href="mailto:leads@WesleyWilliams.dev">Leads@WesleyWilliams.dev</a></p>
+    </section>
+</main>
+      <footer>
+    <p class="footer_text">&copy; Wesley Williams 2020</p>
 </footer>
+    </div>
   </body>
 </html>

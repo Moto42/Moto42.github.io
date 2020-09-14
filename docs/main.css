@@ -1,0 +1,65 @@
+
+/* Color Definitions */
+html {
+    --background__master : #EAE7DC;
+    --background__hero : #8E8D8A;
+}
+body {
+    margin: 0;
+}
+.layout__content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--background__master);
+    max-width: 120ch;
+    margin: 0 auto 0 auto;
+    box-shadow: -7px 0px 5px rgba(0,0,0,0.3), 7px 0px 5px rgba(0,0,0,0.3);
+}
+header {
+
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+.nav__link {
+    padding: 0 1ch 0 1ch;
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.3);
+}
+main {
+    flex-grow: 1;
+}
+footer {
+
+}
+.hero_banner {
+    display: flex;
+    --hero_banner__bg_color: var(--background__hero);
+    text-shadow: 0px 0px 1px white;
+}
+.hero_banner__img {
+    max-height: 150px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px 2px black;
+    margin-right: 12px;
+}
+.hero_banner__left {
+    background: var(--hero_banner__bg_color); 
+    border-radius: 50% 0% 0% 50%;
+    border-style: ridge;
+    border-width: 3px 0px 5px 5px;
+}
+.hero_banner__right {
+    background: var(--hero_banner__bg_color); 
+    flex-grow: 1;
+    border-style: ridge;
+    border-width: 3px 0px 5px 0px;
+}
+.hero_banner h2 {
+
+}
+
+.blurb {
+    
+}
