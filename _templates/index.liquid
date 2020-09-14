@@ -3,15 +3,12 @@ layout: layouts/base
 you_are_here: "index"
 ---
 <main>
-    <div class="hero_banner">
-        <div class="hero_banner__left">
-            <img class="hero_banner__img" src="/images/scruffybeard.jpg" alt="Wesley Williams">
-        </div>
-        <div class="hero_banner__right">
-            <h1>Wesley Williams</h1>
-            <h2>Full Stack Developer</h2>
-        </div>
-    </div>
+    {% include hero with {
+        img_src: '/images/scruffybeard.jpg',
+        img_alt: "Wesley Williams"
+        h1_text: "Welsey Williams",
+        h2_text: "Full Stack Developer",
+    } %}
     <section class="blurb">
         <p>I am a full stack developer concentrating on the MERN stack, and comfortable with JQuery, PHP and other current languages and tools.</p>
         <p>I am looking for full-time position in the East Texas area, and am interested in relocating to the East Coast.</p>
