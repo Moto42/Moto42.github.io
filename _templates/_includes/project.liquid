@@ -1,0 +1,33 @@
+{%- comment -%}
+    The card/section that displays info on a project.
+    Requres variables:
+        title: string, Title of the project.
+        description: string, Description of the project
+        Skills: string, List of skills the project demonstrates.
+        url: string, URL of the live project
+        img_src: string, url to image for project
+        img_alt: string, alt text for the image
+    Optional variables:
+        wakeup_url: string, URL of the project's 'wakup' endpoint 
+
+    todo: add the wakeup/server status widget.
+    {% include widget_wakeup, wakeup_url: {{wakeup_url}} %}
+{%- endcomment -%}
+<section class="project">
+    <img class="project__img" src="{{img_src}}" alt="{{img_alt}}">
+    <div class="project__right">
+        <h2 class="project__title">
+            <a href="{{url}}">
+                {{title}}
+            </a>
+        </h2>
+        <p class="project__description">{{description}}</p>
+        <div class="skills">
+            {%- assign skills = skills | split: ',' -%}
+            {% for skill in skills %}
+                {% include skill, skill: {{skill}} %}
+            {% endfor %}
+        </div>
+    </div>
+    {% include wakeup, wakeup_url: {{wakeup_url}} %}
+</section>

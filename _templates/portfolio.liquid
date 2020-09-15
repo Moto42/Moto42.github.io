@@ -2,6 +2,7 @@
 layout: layouts/base
 you_are_here: "portfolio"
 ---
+<link rel="stylesheet" href="/css/portfolio.css">
 <main>
     {% include hero, {
         img_src: "/images/screencode.jpg",
@@ -9,4 +10,24 @@ you_are_here: "portfolio"
         h1_text: "Portfolio of Projects" ,
         h2_text: "",
     }%}
+
+    {% include project with {
+        title: 'URL Shortening Service',
+        url: 'https://m42short.glitch.me/',
+        description: 'A simple URL shortening service, that converts long, non-sensical web addresses into short, easy to remember ones.',
+        skills: 'html,css,vanillajs,node,express,mongo,rest',
+        img_src: '\images\portfolio\url_shortener.jpg',
+        img_alt: '',
+        wakeup_url: 'https://m42short.glitch.me/wakeup',
+    } %}
+    
+    {% include project with {
+        title: 'TESTING',
+        url: 'https://m42short.glitch.me/',
+        description: 'A simple URL shortening service, that converts long, non-sensical web addresses into short, easy to remember ones.',
+        skills: 'html,css,vanillajs,node,express,mongo,rest',
+        img_src: '\images\portfolio\url_shortener.jpg',
+        img_alt: '',
+        wakeup_url: '',
+    } %}
 </main>

@@ -1,0 +1,31 @@
+{%- case skill -%}
+    {% when 'html' %}
+        {% assign name = 'HTML' %}
+        {% assign icon = 'images/skills/html.svg' %}
+    {% when 'css' %}
+        {% assign name = 'CSS' %}
+        {% assign icon = 'images/skills/bullet.png' %}
+    {% when 'vanillajs' %}
+        {% assign name = 'Javascript' %}
+        {% assign icon = 'images/skills/bullet.png' %}
+    {% when 'node' %}
+        {% assign name = 'Node.js' %}
+        {% assign icon = 'images/skills/bullet.png' %}
+    {% when 'express' %}
+        {% assign name = 'Express.js' -%}
+        {%- assign icon = 'images/skills/bullet.png' %}
+    {% when 'rest' %}
+        {% assign name = 'REST api' %}
+        {% assign icon = 'images/skills/bullet.png' %}
+    {% when 'mongo' %}
+        {% assign name = 'MongoDB' %}
+        {% assign icon = 'images/skills/bullet.png' %}
+    {% else %}
+        {% assign name = skill | capitalize %}
+        {% assign icon = 'images/skills/bullet.png' %}
+{%- endcase -%}
+
+<div class="skills__skill">
+    <img src="{{icon}}" alt="" class="skill__icon">
+    <span class="skill__name"> {{name}} </span>
+</div>
