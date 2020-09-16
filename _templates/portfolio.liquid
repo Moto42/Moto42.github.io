@@ -19,15 +19,50 @@ you_are_here: "portfolio"
         img_src: '\images\portfolio\url_shortener.jpg',
         img_alt: '',
         wakeup_url: 'https://m42short.glitch.me/wakeup',
+        git: '',
     } %}
-    
     {% include project with {
-        title: 'TESTING',
-        url: 'https://m42short.glitch.me/',
-        description: 'A simple URL shortening service, that converts long, non-sensical web addresses into short, easy to remember ones.',
-        skills: 'html,css,vanillajs,node,express,mongo,rest',
-        img_src: '\images\portfolio\url_shortener.jpg',
+        title: 'Card Catalog - Back End',
+        url: 'https://glitch.com/edit/#!/m42-cardcatalog',
+        description: 'A server presenting REST API to track and inventory books in a relational database. Also delivers a web-app front end.<br>Made without Express.js, it&apos;s only dependencies are Node.js and MySQL for Node.',
+        skills: 'vanillajs,node,sql,rest',
+        img_src: '\images\portfolio\cardcatalog-backend.png',
         img_alt: '',
-        wakeup_url: '',
+        wakeup_url: 'https://m42-cardcatalog.glitch.me/wakeup',
+        git: 'https://github.com/Moto42/card-catalog-frontend',
     } %}
+    {% include project with {
+        title: 'Card Catalog - Front End',
+        url: 'https://m42-cardcatalog.glitch.me/',
+        description: 'A Single Page Application written with React.js. Allows user to lookup books by keyword, filter the results, and add new books and locations to keep them in to the database on the back end. ',
+        skills: 'html,css,vanillajs,react,rest',
+        img_src: '\images\portfolio\cardcatalog-frontend.png',
+        img_alt: '',
+        wakeup_url: 'https://m42-cardcatalog.glitch.me/wakeup',
+        git: 'https://github.com/Moto42/card-catalog-frontend',
+    } %}
+    {%- comment -%}YAML wakup signal{%- endcomment -%}
+    {% include project with {
+        title: 'Anonymous Messageboard',
+        url: 'https://m42-messageboard.glitch.me/',
+        description: 'Wrote a REST API, database logic, and functional tests for the back end.<br>Redesigned the front end to be an actual message board rather than just an API testing tool.',
+        skills: 'html,css,vanillajs,react,rest,node,express,mongo',
+        img_src: '\images\portfolio\messageboard.png',
+        img_alt: '',
+        wakeup_url: 'https://m42-messageboard.glitch.me/wakeup',
+        git: 'https://github.com/Moto42/m42-messageboard/tree/glitch',
+    } %}
+    {%- comment -%}Move Youtube board to this server{%- endcomment -%}
+    {%- comment -%}Make youtube board not hidious (remove background){%- endcomment -%}
+    {% include project with {
+        title: 'YouTube Soundboard',
+        url: '/projects/soundboard',
+        description: 'A &apos;soundboard&apos; built in React.js, that plays videos from YoutTube. <br> Users can add a new video to the list, and remove existing buttons. A user&apos;s customized list is saved to their browswer&apos;s local storage, allowing the user to keep a customized list between sessions.',
+        skills: 'html,css,vanillajs,react,rest',
+        img_src: '\images\portfolio\youtube-soundboard.png',
+        img_alt: '',
+        wakeup_url: 'localhost',
+        git: 'https://github.com/Moto42/m42-messageboard/tree/glitch',
+    } %}
+    <script src="/scripts/wakeup.js" defer></script>
 </main>
