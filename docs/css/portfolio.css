@@ -14,6 +14,23 @@
 .project__wakeup {
     grid-area: wakeup;
 }
+.project__wakeup__image {
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+}
+@keyframes spin {
+    from {transform: rotateY(0deg);}
+    to   {transform: rotateY(360deg);}
+}
+.project__wakeup__image__waking {
+    animation: spin 3s linear 0s infinite;
+    transform-origin: 75% 50%;
+}
+.project__wakeup__message {
+    display: inline-block;
+    margin-left: .5em;
+}
 .project__img {
     grid-area: image;
     height: 100px;
@@ -39,5 +56,7 @@
     max-height: 1em;
     max-width: 1em;
 }
-
+.hidden {
+    display: none;
+}
 

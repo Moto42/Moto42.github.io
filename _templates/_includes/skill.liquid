@@ -15,10 +15,16 @@
         {% assign name = 'Express.js' -%}
         {%- assign icon = 'images/skills/bullet.png' %}
     {% when 'rest' %}
-        {% assign name = 'REST api' %}
+        {% assign name = 'REST' %}
         {% assign icon = 'images/skills/bullet.png' %}
     {% when 'mongo' %}
         {% assign name = 'MongoDB' %}
+        {% assign icon = 'images/skills/bullet.png' %}
+    {% when 'sql' %}
+        {% assign name = 'MySQL' %}
+        {% assign icon = 'images/skills/bullet.png' %}
+    {% when 'sql' %}
+        {% assign name = 'React' %}
         {% assign icon = 'images/skills/bullet.png' %}
     {% else %}
         {% assign name = skill | capitalize %}

@@ -1,1 +1,10 @@
-<div class="project__wakeup">{{wakeup_url}}</div>
+{% if wakeup_url == '' %}
+    {%- comment -%}Do nothing{%- endcomment -%}
+{% else %}
+    <div class="project__wakeup" data-wakeup_url="{{wakeup_url}}">
+        <i class="project__wakeup__image project__wakeup__image__waking">💤</i>
+        <i class="project__wakeup__image project__wakeup__image__ready hidden">✔️</i>
+        <i class="project__wakeup__image project__wakeup__image__error hidden">❌</i>
+        <div class="project__wakeup__message">Server is waking up.</div>
+    </div>
+{% endif %}
