@@ -1,8 +1,8 @@
 
 /* Color Definitions */
 html {
-    --background__master : #EAE7DC;
-    --background__hero : #8E8D8A;
+    --background__master : #FAFEFF;
+    --background__hero : #22B0B7;
 }
 body {
     margin: 0;
@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background: var(--background__master);
-    max-width: 120ch;
+    max-width: 80ch;
     margin: 0 auto 0 auto;
     box-shadow: -7px 0px 5px rgba(0,0,0,0.3), 7px 0px 5px rgba(0,0,0,0.3);
 }
