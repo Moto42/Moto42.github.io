@@ -21,6 +21,7 @@
         const message = node.querySelector('.project__wakeup__message');
 
         waking.classList.remove('hidden');
+        waking.classList.add('rotate');
         ready.classList.add('hidden');
         error.classList.add('hidden');
 
@@ -45,8 +46,21 @@
             return false;
         }
     }
+    function goneToSleep(node){
+        const waking = node.querySelector('.project__wakeup__image__waking');
+        const ready = node.querySelector('.project__wakeup__image__ready');
+        const error = node.querySelector('.project__wakeup__image__error');
+        const message = node.querySelector('.project__wakeup__message');
+
+        waking.classList.remove('hidden');
+        waking.classList.remove('rotate');
+        ready.classList.add('hidden');
+        error.classList.add('hidden');
+
+        message.innerText = "Server has gone to sleep. Click to re-awaken."
+    }
 
     Array.from(document.getElementsByClassName('project__wakeup')).forEach(node => {
         wakupWidgetFunction(node);
-    })
+    });
 })()

@@ -23,10 +23,11 @@
     from {transform: rotateY(0deg);}
     to   {transform: rotateY(360deg);}
 }
-.project__wakeup__image__waking {
+.rotate {
     animation: spin 3s linear 0s infinite;
     transform-origin: 75% 50%;
 }
+
 .project__wakeup__message {
     display: inline-block;
     margin-left: .5em;
