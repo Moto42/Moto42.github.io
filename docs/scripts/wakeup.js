@@ -32,7 +32,8 @@
             waking.classList.add('hidden');
             ready.classList.remove('hidden');
             message.innerText = "Server is resonding.";
-            keepAlive(node);
+            //KeepAlive disabled, it's eating up my server time.
+            // keepAlive(node);
             return true;
         }
         else{
