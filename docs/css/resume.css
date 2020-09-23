@@ -35,3 +35,7 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
 }
+.resume__section__links_list {
+    list-style-type: none;
+    padding: 0;
+}
