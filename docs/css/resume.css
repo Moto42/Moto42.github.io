@@ -1,0 +1,37 @@
+.resume__header {
+    display: flex;
+    align-items: baseline;
+}
+.resume__name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.resume__title {
+    margin-left: 1ch;
+    font-weight: bold;
+
+}
+.resume__contact_info {
+    display: flex;
+    justify-content: space-around;
+}
+.resume__contact_info__address {
+
+}
+.resume__contact_info__email {
+
+}
+.resume__section {
+
+}
+.resume__section__title{
+    border-bottom-style: solid;
+    border-color: blue;
+}
+.resume__section__blurb{
+    margin-left: 10%;
+}
+.resume__section__skills_list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
