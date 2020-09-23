@@ -28,6 +28,13 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
 }
+@media only screen and (max-width: 600px) {
+    .resume__section__skills_list {
+        grid-template-columns: repeat(2, auto);
+        padding-left: 2ch;
+        column-gap: 1ch;
+    }
+}
 .resume__section__links_list {
     list-style-type: none;
     padding: 0;
