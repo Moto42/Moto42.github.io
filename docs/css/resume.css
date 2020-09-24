@@ -55,3 +55,9 @@
     grid-area: content;
     margin-left: .5ch;
 }
+.resume__experience {
+    margin-bottom: .3rem;
+}
+.resume__experience__title {
+    text-decoration: underline;
+}
