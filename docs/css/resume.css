@@ -3,6 +3,10 @@
     flex-wrap: wrap;
     align-items: baseline;
 }
+.resume__note {
+    margin: .5rem 0 .5rem 0;
+    background: gainsboro;
+}
 .resume__name {
     font-size: 2rem;
     font-weight: bold;
