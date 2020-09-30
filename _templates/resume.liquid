@@ -24,7 +24,7 @@ you_are_here: "resume"
                 <a href="mailto:jobs@wesleywilliams.dev">Jobs@WesleyWilliams.dev</a>
             </div>
         </div>
-        <div class="resume__section">
+        <div class="resume__section">{%- comment -%}Summary{%- endcomment -%}
             <div class="resume__section__title">Summary</div>
             <div class="resume__section__blurb">
                 Full Stack Developer turning my company&apos;s ideas into functional code so they can 
@@ -32,7 +32,7 @@ you_are_here: "resume"
                 strengthen those skills, or move into other web technologies.
             </div>
         </div>
-        <div class="resume__section">
+        <div class="resume__section">{%- comment -%}Skills{%- endcomment -%}
             <div class="resume__section__title">Skills</div>
             <ul class="resume__section__skills_list">
                 <li>HTML</li>
@@ -53,7 +53,7 @@ you_are_here: "resume"
                 <li>MySQL</li>
             </ul>
         </div>
-        <div class="resume__section">
+        <div class="resume__section">{%- comment -%}Experience{%- endcomment -%}
             <div class="resume__section__title">Experience</div>
             <div class="resume__section__blurb">
                 <div class="resume__experience">
@@ -71,6 +71,14 @@ you_are_here: "resume"
                     </div>
                 </div>
                 <div class="resume__experience">
+                    <div class="resume__experience__title">QR Code Maker </div>
+                    <div class="resume__experience__blurb">
+                         Builds QR codes with customizable color-schemes and module shapes. Built with D3.js and JQuery.
+                         The app is served as a static site, reducing server costs and eliminating  &apos;server lag&apos;
+                         when generating or modifyingthe qr code. 
+                    </div>
+                </div>
+                <div class="resume__experience">
                     <div class="resume__experience__title">Personal Card Catalog </div>
                     <div class="resume__experience__blurb">
                         Keeps track of my otherwise horribly disorganized collection of books.
@@ -78,7 +86,7 @@ you_are_here: "resume"
                         backend presents a REST API and keeps everything in a mySQL database. 
                     </div>
                 </div>
-                <div class="resume__experience">
+                <div class="resume__experience hide">
                     <div class="resume__experience__title">Anonymous Message Board </div>
                     <div class="resume__experience__blurb">
                         Build a REST API to specifications written by someone else for an anonymous
@@ -88,7 +96,7 @@ you_are_here: "resume"
                 </div>
             </div>
         </div>
-        <div class="resume__section">
+        <div class="resume__section">{%- comment -%}References{%- endcomment -%}
             <div class="resume__section__title">References</div>
             <div class="resume__section__blurb">
                 For their privacy, reference contact information is omited from the 
@@ -99,7 +107,7 @@ you_are_here: "resume"
                 </div>
             </div>
         </div>
-        <div class="resume__section">
+        <div class="resume__section">{%- comment -%}Links{%- endcomment -%}
             <div class="resume__section__title">Links</div>
             <ul class="resume__section__links_list">
                 <li class="hanger">

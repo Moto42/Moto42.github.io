@@ -62,3 +62,7 @@ footer {
 .blurb {
     
 }
+
+.hide {
+    display: none;
+}
