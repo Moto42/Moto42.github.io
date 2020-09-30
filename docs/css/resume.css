@@ -65,3 +65,16 @@
 .resume__experience__title {
     text-decoration: underline;
 }
+@media only print {
+    header, footer, .resume__note{
+        display: none;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    .layout__content {
+        box-shadow: none;
+        background: white;
+    }
+}
