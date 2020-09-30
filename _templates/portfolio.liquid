@@ -22,6 +22,17 @@ you_are_here: "portfolio"
         git: '',
     } %}
     {% include project with {
+        title: 'QR Code Maker',
+        url: '/projects/qrcoder',
+        description: 'Builds QR codes with customizable color-schemes and module shapes. Built with D3.js and JQuery. The app is served as a static site, reducing server costs and eliminating  &apos;server lag&apos; when generating or modifying the qr code.',
+        skills: 'html,css,vanillajs,jquery,d3',
+        img_src: '\images\portfolio\qrcoder.png',
+        img_alt: '',
+        wakeup_url: 'localhost',
+        git: 'https://github.com/Moto42/m42-qrcode',
+    } %}
+
+    {% include project with {
         title: 'Card Catalog - Back End',
         url: 'https://glitch.com/edit/#!/m42-cardcatalog',
         description: 'A server presenting REST API to track and inventory books in a relational database. Also delivers a web-app front end.<br>Made without Express.js, it&apos;s only dependencies are Node.js and MySQL for Node.',
