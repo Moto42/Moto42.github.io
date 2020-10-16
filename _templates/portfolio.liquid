@@ -31,7 +31,16 @@ you_are_here: "portfolio"
         wakeup_url: 'localhost',
         git: 'https://github.com/Moto42/m42-qrcode',
     } %}
-
+    {% include project with {
+        title: 'Instant-Meme',
+        url: 'https://instant-meme.herokuapp.com/',
+        description: 'An Express.js middleware, presenting a single-endpoint REST api. Allows users to generate text-on-image ‘memes’ by specifying their content in the URL call to the API. The middleware builds each image on-the-fly when requested.\nA frontend built on JAM stack explains how to use the service, or allows users to build memes on the website.',
+        skills: 'express,node,rest',
+        img_src: '\images\portfolio\cardcatalog-backend.png',
+        img_alt: '',
+        wakeup_url: 'https://instant-meme.herokuapp.com/kermit',
+        git: 'https://github.com/Moto42/instant-meme',
+    } %}
     {% include project with {
         title: 'Card Catalog - Back End',
         url: 'https://glitch.com/edit/#!/m42-cardcatalog',
