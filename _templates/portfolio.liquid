@@ -36,11 +36,12 @@ you_are_here: "portfolio"
         url: 'https://instant-meme.herokuapp.com/',
         description: 'An Express.js middleware, presenting a single-endpoint REST api. Allows users to generate text-on-image ‘memes’ by specifying their content in the URL call to the API. The middleware builds each image on-the-fly when requested.\nA frontend built on JAM stack explains how to use the service, or allows users to build memes on the website.',
         skills: 'express,node,rest',
-        img_src: '\images\portfolio\cardcatalog-backend.png',
+        img_src: '\images\portfolio\instant-meme.png',
         img_alt: '',
         wakeup_url: 'https://instant-meme.herokuapp.com/kermit',
         git: 'https://github.com/Moto42/instant-meme',
     } %}
+    {%- comment -%}
     {% include project with {
         title: 'Card Catalog - Back End',
         url: 'https://glitch.com/edit/#!/m42-cardcatalog',
@@ -61,7 +62,7 @@ you_are_here: "portfolio"
         wakeup_url: 'https://m42-cardcatalog.glitch.me/wakeup',
         git: 'https://github.com/Moto42/card-catalog-frontend',
     } %}
-    {%- comment -%}YAML wakup signal{%- endcomment -%}
+    {%- endcomment -%}
     {% include project with {
         title: 'Anonymous Messageboard',
         url: 'https://m42-messageboard.glitch.me/',
@@ -72,7 +73,6 @@ you_are_here: "portfolio"
         wakeup_url: 'https://m42-messageboard.glitch.me/wakeup',
         git: 'https://github.com/Moto42/m42-messageboard/tree/glitch',
     } %}
-    {%- comment -%}Move Youtube board to this server{%- endcomment -%}
     {%- comment -%}Make youtube board not hidious (remove background){%- endcomment -%}
     {% include project with {
         title: 'YouTube Soundboard',
